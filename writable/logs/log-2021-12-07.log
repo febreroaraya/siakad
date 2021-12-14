@@ -1,0 +1,15 @@
+CRITICAL - 2021-12-07 03:34:21 --> Undefined constant "auth"
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_nav', Array, true)
+#3 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(5): view('layout/v_nav')
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#7 /Applications/MAMP/htdocs/siakad/app/Controllers/Home.php(13): view('layout/v_wrappe...', Array)
+#8 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Home->index()
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#13 {main}
