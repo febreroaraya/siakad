@@ -33,7 +33,7 @@
                     <?php } ?>
 
                     <?php
-                    echo form_open('ruangan/update' . $ruangan['id_ruangan']);
+                    echo form_open('ruangan/update/'. $ruangan['id_ruangan']);
                     ?>
                     <div class="form-group">
                          <label>Gedung</label>
