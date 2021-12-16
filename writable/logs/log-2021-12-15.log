@@ -575,3 +575,24 @@ CRITICAL - 2021-12-15 20:28:19 --> Call to a member function delete_data() on nu
 #3 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #4 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #5 {main}
+ERROR - 2021-12-15 23:02:17 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: NO)
+CRITICAL - 2021-12-15 23:02:17 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/siakad/app/Models/Mdl_auth.php(13): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/siakad/app/Controllers/Auth.php(53): App\Models\Mdl_auth->login_user('admin', 'admin')
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Auth->cek_login()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#9 {main}
+CRITICAL - 2021-12-15 23:03:32 --> Undefined property: App\Controllers\Ruangan::$Mdl_ruangan
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ruangan.php(103): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 103)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ruangan->delete('1')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ruangan))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
