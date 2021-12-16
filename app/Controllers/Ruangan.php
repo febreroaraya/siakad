@@ -95,12 +95,13 @@ class Ruangan extends BaseController
                return redirect()->to(base_url('ruangan/edit/' . $id_ruangan));
           }
      }
+
      public function delete($id_ruangan)
      {
           $data = [
                'id_ruangan' => $id_ruangan,
           ];
-          $this->Mdl_ruangan->delete_data($data);
+          $this->Mdl_Ruangan->delete_data($data);
           session()->setFlashdata('pesan', 'Data berhasil dihapus!');
           return redirect()->to(base_url('ruangan'));
      }

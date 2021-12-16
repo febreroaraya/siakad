@@ -10,7 +10,7 @@
                 <li><a href="<?= base_url('kelas') ?>">Kelas</a></li>
                 <li><a href="<?= base_url('gedung') ?>">Gedung</a></li>
                 <li><a href="<?= base_url('ruangan') ?>">Ruangan</a></li>
-                <li><a href="#">Penjurusan</a></li>
+                <li><a href="<?= base_url('jurusan') ?>">Penjurusan</a></li>
                 <li><a href="#">Guru</a></li>
                 <li><a href="#">Siswa</a></li>
               </ul>

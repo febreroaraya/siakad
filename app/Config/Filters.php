@@ -45,6 +45,7 @@ class Filters extends BaseConfig
                 'kelas', 'kelas/*',
                 'gedung', 'gedung/*',
                 'ruangan', 'ruangan/*',
+                'jurusan', 'jurusan/*',
                 '/'
             ]],
             'toolbar',
