@@ -12,14 +12,14 @@ class Ruangan extends BaseController
      public function __construct()
      {
           helper('form');
-          $this->Mdl_Ruangan = new Mdl_Ruangan();
+          $this->Mdl_ruangan = new Mdl_ruangan();
           $this->Mdl_gedung = new Mdl_gedung();
      }
      public function index()
      {
           $data = [
                'title' => 'Ruangan',
-               'ruangan' => $this->Mdl_Ruangan->allData(),
+               'ruangan' => $this->Mdl_ruangan->allData(),
                'isi'   => 'admin/ruangan/v_index'
           ];
           return view('layout/v_wrapper', $data);
@@ -50,7 +50,7 @@ class Ruangan extends BaseController
                     'id_gedung' => $this->request->getPost('id_gedung'),
                     'ruangan' => $this->request->getPost('ruangan'),
                ];
-               $this->Mdl_Ruangan->add($data);
+               $this->Mdl_ruangan->add($data);
                session()->setFlashdata('pesan', 'Data berhasil disimpan!');
                return redirect()->to(base_url('ruangan'));
           } else {
@@ -64,7 +64,7 @@ class Ruangan extends BaseController
           $data = [
                'title' => 'edit Ruangan',
                'gedung' => $this->Mdl_gedung->allData(),
-               'ruangan' => $this->Mdl_Ruangan->detail_Data($id_ruangan),
+               'ruangan' => $this->Mdl_ruangan->detail_Data($id_ruangan),
                'isi'   => 'admin/ruangan/v_edit'
           ];
           return view('layout/v_wrapper', $data);
@@ -86,7 +86,7 @@ class Ruangan extends BaseController
                     'id_gedung' => $this->request->getPost('id_gedung'),
                     'ruangan' => $this->request->getPost('ruangan'),
                ];
-               $this->Mdl_Ruangan->edit($data);
+               $this->Mdl_ruangan->edit($data);
                session()->setFlashdata('pesan', 'Data berhasil update !!');
                return redirect()->to(base_url('ruangan'));
           } else {
@@ -101,7 +101,7 @@ class Ruangan extends BaseController
           $data = [
                'id_ruangan' => $id_ruangan,
           ];
-          $this->Mdl_Ruangan->delete_data($data);
+          $this->Mdl_ruangan->delete_data($data);
           session()->setFlashdata('pesan', 'Data berhasil dihapus!');
           return redirect()->to(base_url('ruangan'));
      }

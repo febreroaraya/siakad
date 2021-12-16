@@ -8,7 +8,7 @@ class Mdl_kelas extends Model
     public function allData()
     {
         return $this->db->table('tb_kelas')
-        ->orderBy('id_kelas', 'DESC')
+        ->orderBy('id_kelas', 'ASC')
         ->get()->getResultArray();
     }
     public function add($data)

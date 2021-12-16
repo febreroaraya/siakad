@@ -8,7 +8,7 @@ class Mdl_gedung extends Model
     public function allData()
     {
         return $this->db->table('tb_gedung')
-        ->orderBy('id_gedung', 'DESC')
+        ->orderBy('id_gedung', 'ASC')
         ->get()->getResultArray();
     }
     public function add($data)

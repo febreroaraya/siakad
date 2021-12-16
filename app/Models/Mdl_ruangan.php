@@ -10,7 +10,7 @@ class Mdl_ruangan extends Model
     {
         return $this->db->table('tbl_ruangan')
             ->join('tb_gedung', 'tb_gedung.id_gedung = tbl_ruangan.id_gedung', 'left')
-            ->orderBy('id_ruangan', 'DESC')
+            ->orderBy('tb_gedung.id_gedung', 'ASC')
             ->get()->getResultArray();
     }
 

@@ -40,8 +40,8 @@
                                 <td class="text-center"><?= $no++ ?></td>
                                 <td><?= $value['kelas'] ?></td>
                                 <td class="text-center">
-                                    <button class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_kelas'] ?>"><i class="fa fa-trash"></i></button>
                                     <button class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#edit<?= $value['id_kelas'] ?>"><i class="fa fa-pencil"></i></button>
+                                    <button class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_kelas'] ?>"><i class="fa fa-trash"></i></button>
                                 </td>
                             </tr>
                         <?php } ?>

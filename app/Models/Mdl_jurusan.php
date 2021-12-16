@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+
 use CodeIgniter\Model;
 
 class Mdl_jurusan extends Model
@@ -9,7 +10,7 @@ class Mdl_jurusan extends Model
     {
         return $this->db->table('tb_jurusan')
             ->join('tb_kelas', 'tb_kelas.id_kelas = tb_jurusan.id_kelas', 'left')
-            ->orderBy('id_jurusan', 'DESC')
+            ->orderBy('tb_kelas.id_kelas', 'ASC')
             ->get()->getResultArray();
     }
 
@@ -37,4 +38,5 @@ class Mdl_jurusan extends Model
             ->where('id_jurusan', $data['id_jurusan'])
             ->delete($data);
     }
+    
 }
