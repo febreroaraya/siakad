@@ -38,4 +38,5 @@ class Mdl_ruangan extends Model
             ->where('id_ruangan', $data['id_ruangan'])
             ->delete($data);
     }
+    
 }

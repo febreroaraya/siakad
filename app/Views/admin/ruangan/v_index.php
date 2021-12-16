@@ -42,8 +42,9 @@
                                         <td><?= $value['gedung'] ?></td>
                                         <td><?= $value['ruangan'] ?></td>
                                         <td class="text-center">
-                                             <a href="<?= base_url('ruangan/edit/' . $value['id_ruangan']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
-                                             <button class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#edit<?= $value['id_ruangan'] ?>"><i class="fa fa-trash"></i></button>
+                                             <a href="<?= base_url('ruangan/edit/' . $value['id_ruangan']) ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
+                                             <button class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#edit<?= $value['id_gedung'] ?>"><i class="fa fa-trash"></i></button>
+
                                         </td>
                                    </tr>
                               <?php } ?>
@@ -55,3 +56,28 @@
           <!-- /.box -->
      </div>
 </div>
+
+<!-- Modal Delete -->
+<?php foreach ($ruangan as $key => $value) { ?>
+     <div class="modal fade" id="delete<?= $value['id_ruangan'] ?>">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                         <h4 class="modal-title">Hapus <?= $title ?></h4>
+                    </div>
+                    <div class="modal-body">
+                         Apakah anda yakin ingin menghapus <b><?= $value['ruangan'] ?> ?</b>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                         <a href="<?= base_url('ruangan/delete/' . $value['id_ruangan']) ?>" class="btn btn-primary btn-flat">Hapus</a>
+                    </div>
+               </div>
+               <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+     </div>
+<?php } ?>
