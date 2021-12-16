@@ -34,7 +34,7 @@ class Database extends Config
         'DSN'      => '',
         'hostname' => '127.0.0.1',
         'username' => 'root',
-        'password' => '',
+        'password' => 'root',
         'database' => 'db_siakad',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
@@ -47,7 +47,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 8889,
     ];
 
     /**
@@ -73,7 +73,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 8889,
     ];
 
     public function __construct()
