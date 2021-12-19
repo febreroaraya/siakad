@@ -1,0 +1,25 @@
+CRITICAL - 2021-12-17 01:47:58 --> Invalid file: admin/jurusan/v_edit.php
+#0 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/jurusan/v...')
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('admin/jurusan/v...', Array, true)
+#2 C:\xampp\htdocs\siakad\app\Views\layout\v_content.php(4): view('admin/jurusan/v...')
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#6 C:\xampp\htdocs\siakad\app\Views\layout\v_wrapper.php(6): view('layout/v_conten...')
+#7 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\View\View.php(214): include('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#9 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#10 C:\xampp\htdocs\siakad\app\Controllers\Jurusan.php(87): view('layout/v_wrappe...', Array)
+#11 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Jurusan->edit('2')
+#12 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#13 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#14 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#15 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#16 {main}
+ERROR - 2021-12-17 02:02:22 --> Unknown column '$id_jurusan' in 'field list'
+ERROR - 2021-12-17 02:06:27 --> Unknown column '$id_jurusan' in 'field list'
+ERROR - 2021-12-17 02:06:43 --> Unknown column '$id_jurusan' in 'field list'
+ERROR - 2021-12-17 02:06:54 --> Unknown column '$id_jurusan' in 'field list'
+ERROR - 2021-12-17 02:07:19 --> Unknown column '$id_jurusan' in 'field list'
+ERROR - 2021-12-17 02:07:38 --> Unknown column '$id_jurusan' in 'field list'
+ERROR - 2021-12-17 02:08:41 --> Unknown column '$id_jurusan' in 'field list'
