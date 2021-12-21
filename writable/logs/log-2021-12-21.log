@@ -192,3 +192,16 @@ CRITICAL - 2021-12-21 02:34:27 --> Illegal string offset 'kode_mapel'
 #16 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #17 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #18 {main}
+ERROR - 2021-12-21 06:23:57 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-12-21 06:23:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Database/BaseConnection.php(577): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Applications/MAMP/htdocs/siakad/app/Models/Mdl_auth.php(13): CodeIgniter\Database\BaseBuilder->get()
+#3 /Applications/MAMP/htdocs/siakad/app/Controllers/Auth.php(53): App\Models\Mdl_auth->login_user('admin', 'admin')
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Auth->cek_login()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#9 {main}

@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 21, 2021 at 10:08 AM
--- Server version: 10.4.21-MariaDB
--- PHP Version: 7.4.24
+-- Host: localhost:8889
+-- Waktu pembuatan: 21 Des 2021 pada 12.32
+-- Versi server: 5.7.34
+-- Versi PHP: 7.4.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tbl_ruangan`
+-- Struktur dari tabel `tbl_ruangan`
 --
 
 CREATE TABLE `tbl_ruangan` (
@@ -34,7 +34,7 @@ CREATE TABLE `tbl_ruangan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tbl_ruangan`
+-- Dumping data untuk tabel `tbl_ruangan`
 --
 
 INSERT INTO `tbl_ruangan` (`id_ruangan`, `id_gedung`, `ruangan`) VALUES
@@ -45,7 +45,7 @@ INSERT INTO `tbl_ruangan` (`id_ruangan`, `id_gedung`, `ruangan`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_gedung`
+-- Struktur dari tabel `tb_gedung`
 --
 
 CREATE TABLE `tb_gedung` (
@@ -54,7 +54,7 @@ CREATE TABLE `tb_gedung` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tb_gedung`
+-- Dumping data untuk tabel `tb_gedung`
 --
 
 INSERT INTO `tb_gedung` (`id_gedung`, `gedung`) VALUES
@@ -64,7 +64,7 @@ INSERT INTO `tb_gedung` (`id_gedung`, `gedung`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_jurusan`
+-- Struktur dari tabel `tb_jurusan`
 --
 
 CREATE TABLE `tb_jurusan` (
@@ -75,7 +75,7 @@ CREATE TABLE `tb_jurusan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_jurusan`
+-- Dumping data untuk tabel `tb_jurusan`
 --
 
 INSERT INTO `tb_jurusan` (`id_jurusan`, `id_kelas`, `kode_jurusan`, `jurusan`) VALUES
@@ -86,7 +86,7 @@ INSERT INTO `tb_jurusan` (`id_jurusan`, `id_kelas`, `kode_jurusan`, `jurusan`) V
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_kelas`
+-- Struktur dari tabel `tb_kelas`
 --
 
 CREATE TABLE `tb_kelas` (
@@ -95,7 +95,7 @@ CREATE TABLE `tb_kelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tb_kelas`
+-- Dumping data untuk tabel `tb_kelas`
 --
 
 INSERT INTO `tb_kelas` (`id_kelas`, `kelas`) VALUES
@@ -106,7 +106,7 @@ INSERT INTO `tb_kelas` (`id_kelas`, `kelas`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_mapel`
+-- Struktur dari tabel `tb_mapel`
 --
 
 CREATE TABLE `tb_mapel` (
@@ -119,7 +119,7 @@ CREATE TABLE `tb_mapel` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_mapel`
+-- Dumping data untuk tabel `tb_mapel`
 --
 
 INSERT INTO `tb_mapel` (`id_mapel`, `kode_mapel`, `mapel`, `kategori`, `semester`, `id_jurusan`) VALUES
@@ -131,7 +131,7 @@ INSERT INTO `tb_mapel` (`id_mapel`, `kode_mapel`, `mapel`, `kategori`, `semester
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_ta`
+-- Struktur dari tabel `tb_ta`
 --
 
 CREATE TABLE `tb_ta` (
@@ -141,19 +141,23 @@ CREATE TABLE `tb_ta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `tb_ta`
+-- Dumping data untuk tabel `tb_ta`
 --
 
 INSERT INTO `tb_ta` (`id_ta`, `ta`, `semester`) VALUES
 (1, '2021/2022', 'Ganjil'),
-(2, '2021/2022', 'Genap'),
-(3, '2022/2023', 'Ganjil'),
-(4, '2022/2023', 'Genap');
+(2, '2022/2023', 'Genap'),
+(3, '2023/2024', 'Ganjil'),
+(4, '2024/2025', 'Ganjil'),
+(6, '2021/2022', 'Genap'),
+(7, '2022/2023', 'Ganjil'),
+(8, '2023/2024', 'Genap'),
+(9, '2024/2025', 'Genap');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `tb_user`
+-- Struktur dari tabel `tb_user`
 --
 
 CREATE TABLE `tb_user` (
@@ -165,7 +169,7 @@ CREATE TABLE `tb_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Dumping data for table `tb_user`
+-- Dumping data untuk tabel `tb_user`
 --
 
 INSERT INTO `tb_user` (`id_user`, `nama_user`, `username`, `password`, `foto`) VALUES
@@ -178,89 +182,89 @@ INSERT INTO `tb_user` (`id_user`, `nama_user`, `username`, `password`, `foto`) V
 --
 
 --
--- Indexes for table `tbl_ruangan`
+-- Indeks untuk tabel `tbl_ruangan`
 --
 ALTER TABLE `tbl_ruangan`
   ADD PRIMARY KEY (`id_ruangan`);
 
 --
--- Indexes for table `tb_gedung`
+-- Indeks untuk tabel `tb_gedung`
 --
 ALTER TABLE `tb_gedung`
   ADD PRIMARY KEY (`id_gedung`);
 
 --
--- Indexes for table `tb_jurusan`
+-- Indeks untuk tabel `tb_jurusan`
 --
 ALTER TABLE `tb_jurusan`
   ADD PRIMARY KEY (`id_jurusan`);
 
 --
--- Indexes for table `tb_kelas`
+-- Indeks untuk tabel `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
   ADD PRIMARY KEY (`id_kelas`);
 
 --
--- Indexes for table `tb_mapel`
+-- Indeks untuk tabel `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
   ADD PRIMARY KEY (`id_mapel`);
 
 --
--- Indexes for table `tb_ta`
+-- Indeks untuk tabel `tb_ta`
 --
 ALTER TABLE `tb_ta`
   ADD PRIMARY KEY (`id_ta`);
 
 --
--- Indexes for table `tb_user`
+-- Indeks untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
   ADD PRIMARY KEY (`id_user`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `tbl_ruangan`
+-- AUTO_INCREMENT untuk tabel `tbl_ruangan`
 --
 ALTER TABLE `tbl_ruangan`
   MODIFY `id_ruangan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT for table `tb_gedung`
+-- AUTO_INCREMENT untuk tabel `tb_gedung`
 --
 ALTER TABLE `tb_gedung`
   MODIFY `id_gedung` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT for table `tb_jurusan`
+-- AUTO_INCREMENT untuk tabel `tb_jurusan`
 --
 ALTER TABLE `tb_jurusan`
   MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `tb_kelas`
+-- AUTO_INCREMENT untuk tabel `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
   MODIFY `id_kelas` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT for table `tb_mapel`
+-- AUTO_INCREMENT untuk tabel `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
   MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT for table `tb_ta`
+-- AUTO_INCREMENT untuk tabel `tb_ta`
 --
 ALTER TABLE `tb_ta`
-  MODIFY `id_ta` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_ta` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT for table `tb_user`
+-- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
   MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
