@@ -12,7 +12,11 @@
           <li><a href="<?= base_url('ruangan') ?>">Ruangan</a></li>
           <li><a href="<?= base_url('jurusan') ?>">Penjurusan</a></li>
           <li><a href="<?= base_url('ta') ?>">Tahun Akademik</a></li>
-          <li><a href="#">Siswa</a></li>
+          <li><a href="<?= base_url('mapel') ?>">Mata Pelajaran</a></li>
+          <li><a href="<?= base_url('siswa') ?>">Siswa</a></li>
+          <li><a href="<?= base_url('guru') ?>">Guru</a></li>
+          <li><a href="<?= base_url('user') ?>">User</a></li>
+          <li><a href="#">kapsek</a></li>
         </ul>
       </li>
       <li><a href="#">About</a></li>

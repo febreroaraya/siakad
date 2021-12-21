@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 20, 2021 at 08:16 AM
+-- Generation Time: Dec 21, 2021 at 10:08 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.24
 
@@ -80,7 +80,8 @@ CREATE TABLE `tb_jurusan` (
 
 INSERT INTO `tb_jurusan` (`id_jurusan`, `id_kelas`, `kode_jurusan`, `jurusan`) VALUES
 (1, 1, 'IPA', 'ilmu pengetahuan alam'),
-(2, 1, 'IPS', 'ilmu pengetahua sosial');
+(2, 2, 'IPS', 'ilmu pengetahua sosial'),
+(6, 3, 'BI', 'Bahasa Indonesia');
 
 -- --------------------------------------------------------
 
@@ -101,6 +102,31 @@ INSERT INTO `tb_kelas` (`id_kelas`, `kelas`) VALUES
 (1, 'Kelas 12'),
 (2, 'Kelas 11'),
 (3, 'Kelas 10');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tb_mapel`
+--
+
+CREATE TABLE `tb_mapel` (
+  `id_mapel` int(11) NOT NULL,
+  `kode_mapel` varchar(225) DEFAULT NULL,
+  `mapel` varchar(10) DEFAULT NULL,
+  `kategori` varchar(10) DEFAULT NULL,
+  `semester` varchar(10) DEFAULT NULL,
+  `id_jurusan` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `tb_mapel`
+--
+
+INSERT INTO `tb_mapel` (`id_mapel`, `kode_mapel`, `mapel`, `kategori`, `semester`, `id_jurusan`) VALUES
+(1, '0011', 'IPA', 'wajib', 'Ganjil', 2),
+(2, '0033', 'IPS', 'wajib', 'Genap', 1),
+(3, '0044', 'FISIKA', 'wajib', 'Ganjil', 2),
+(4, '0066', 'KIMIA', 'wajib', 'Genap', 2);
 
 -- --------------------------------------------------------
 
@@ -176,6 +202,12 @@ ALTER TABLE `tb_kelas`
   ADD PRIMARY KEY (`id_kelas`);
 
 --
+-- Indexes for table `tb_mapel`
+--
+ALTER TABLE `tb_mapel`
+  ADD PRIMARY KEY (`id_mapel`);
+
+--
 -- Indexes for table `tb_ta`
 --
 ALTER TABLE `tb_ta`
@@ -207,13 +239,19 @@ ALTER TABLE `tb_gedung`
 -- AUTO_INCREMENT for table `tb_jurusan`
 --
 ALTER TABLE `tb_jurusan`
-  MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
   MODIFY `id_kelas` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `tb_mapel`
+--
+ALTER TABLE `tb_mapel`
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `tb_ta`

@@ -47,6 +47,7 @@ class Filters extends BaseConfig
                 'ruangan', 'ruangan/*',
                 'jurusan', 'jurusan/*',
                 'Ta', 'Ta/*',
+                'Mapel', 'Mapel/*',
                 '/'
             ]],
             'toolbar',
