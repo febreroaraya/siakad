@@ -119,3 +119,80 @@
     </div>
     <!-- /.modal-dialog -->
 </div>
+
+
+<!-- Modal Edit -->
+<?php foreach ($user as $key => $value) { ?>
+    <div class="modal fade" id="edit<?= $value['id_user'] ?>">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Edit <?= $title ?></h4>
+                </div>
+                <div class="modal-body">
+                    <?php
+                    echo form_open_multipart('user/edit/' . $value['id_user']);
+                    ?>
+                    <div class="form-group">
+                        <label>Nama User</label>
+                        <input name="nama_user" value="<?= $value['nama_user'] ?>" class="form-control" placeholder="Gedung" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Username</label>
+                        <input name="username" value="<?= $value['username'] ?>" class="form-control" placeholder="Username">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input name="password" value="<?= $value['password'] ?>" class="form-control" placeholder="Password">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Foto</label>
+                        <input type="file" name="foto" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <img src="<?= base_url('foto/' . $value['foto']) ?>" class="img-circle" width="60px" height="60px">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                    <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
+                </div>
+                <?php echo form_close() ?>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+<?php } ?>
+
+
+<!-- Modal Delete -->
+<?php foreach ($user as $key => $value) { ?>
+    <div class="modal fade" id="delete<?= $value['id_user'] ?>">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Hapus <?= $title ?></h4>
+                </div>
+                <div class="modal-body">
+                    Apakah anda yakin ingin menghapus <b><?= $value['nama_user'] ?> ?</b>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                    <a href="<?= base_url('user/delete/' . $value['id_user']) ?>" class="btn btn-primary btn-flat">Hapus</a>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+<?php } ?>

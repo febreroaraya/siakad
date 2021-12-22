@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Models;
+
 use CodeIgniter\Model;
 
 class Mdl_User extends Model
@@ -8,8 +9,15 @@ class Mdl_User extends Model
     public function allData()
     {
         return $this->db->table('tb_user')
-        ->orderBy('id_user', 'ASC')
-        ->get()->getResultArray();
+            ->orderBy('id_user', 'ASC')
+            ->get()->getResultArray();
+    }
+
+    public function detail_data($id_user)
+    {
+        return $this->db->table('tb_user')
+            ->where('id_user', $id_user)
+            ->get()->getRowArray();
     }
     public function add($data)
     {
@@ -18,13 +26,13 @@ class Mdl_User extends Model
     public function edit($data)
     {
         $this->db->table('tb_user')
-        ->where('id_user', $data['id_user'])
-        ->update($data);
+            ->where('id_user', $data['id_user'])
+            ->update($data);
     }
     public function delete_data($data)
     {
         $this->db->table('tb_user')
-        ->where('id_user', $data['id_user'])
-        ->delete($data);
+            ->where('id_user', $data['id_user'])
+            ->delete($data);
     }
 }
