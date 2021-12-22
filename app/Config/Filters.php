@@ -46,9 +46,9 @@ class Filters extends BaseConfig
                 'gedung', 'gedung/*',
                 'ruangan', 'ruangan/*',
                 'jurusan', 'jurusan/*',
-                'Ta', 'Ta/*',
-                'Mapel', 'Mapel/*',
-                '/'
+                'ta', 'ta/*',
+                'mapel', 'mapel/*',
+                'user', 'user/*',
             ]],
             'toolbar',
             // 'honeypot',
