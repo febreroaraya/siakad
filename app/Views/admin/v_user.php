@@ -15,21 +15,21 @@
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-toggle="modal" data-target="#add"><i class="fa fa-plus"></i> Tambah</button>
                 </div>
-              <!-- /.box-tools -->
+                <!-- /.box-tools -->
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-                 <?php
-                 $errors = session()->getFlashdata('errors');
-                    if (!empty($errors)) { ?>
-                         <div class="alert alert-danger" role="alert">
-                              <ul>
-                                   <?php foreach ($errors as $key => $value) { ?>
-                                        <li><?= esc($value) ?></li>
-                                   <?php } ?>
-                              </ul>
-                         </div>
-                    <?php } ?>
+                <?php
+                $errors = session()->getFlashdata('errors');
+                if (!empty($errors)) { ?>
+                    <div class="alert alert-danger" role="alert">
+                        <ul>
+                            <?php foreach ($errors as $key => $value) { ?>
+                                <li><?= esc($value) ?></li>
+                            <?php } ?>
+                        </ul>
+                    </div>
+                <?php } ?>
 
                 <?php
 
@@ -51,14 +51,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $no = 1; 
+                        <?php $no = 1;
                         foreach ($user as $key => $value) { ?>
                             <tr>
                                 <td class="text-center"><?= $no++ ?></td>
                                 <td><?= $value['nama_user'] ?></td>
                                 <td><?= $value['username'] ?></td>
                                 <td><?= $value['password'] ?></td>
-                                <td class="text-center"><img src="<?= base_url('foto/'.$value['foto']) ?>" class="img-circle" width="60px" height="60px"></td>
+                                <td class="text-center"><img src="<?= base_url('foto/' . $value['foto']) ?>" class="img-circle" width="60px" height="60px"></td>
                                 <td class="text-center">
                                     <button class="btn btn-warning btn-sm btn-flat" data-toggle="modal" data-target="#edit<?= $value['id_user'] ?>"><i class="fa fa-pencil"></i></button>
                                     <button class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_user'] ?>"><i class="fa fa-trash"></i></button>
@@ -70,7 +70,7 @@
             </div>
             <!-- /.box-body -->
         </div>
-          <!-- /.box -->
+        <!-- /.box -->
     </div>
 </div>
 
@@ -86,7 +86,7 @@
             </div>
             <div class="modal-body">
                 <?php
-                    echo form_open('user/add');
+                echo form_open_multipart('user/add');
                 ?>
                 <div class="form-group">
                     <label>Nama User</label>
@@ -115,7 +115,7 @@
             </div>
             <?php echo form_close() ?>
         </div>
-    <!-- /.modal-content -->
+        <!-- /.modal-content -->
     </div>
-<!-- /.modal-dialog -->
+    <!-- /.modal-dialog -->
 </div>
