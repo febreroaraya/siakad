@@ -22,8 +22,8 @@
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="<?= base_url('kelas') ?>">Menu 1</a></li>
-          <li><a href="<?= base_url('kelas') ?>">Menu 2</a></li>
+          <li><a href="<?= base_url('fakultas') ?>">Fakultas</a></li>
+          <li><a href="<?= base_url('gedung') ?>">Menu 2</a></li>
         </ul>
       </li>
 
@@ -31,7 +31,7 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Setting <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="<?= base_url('user') ?>">User</a></li>
-          <li><a href="<?= base_url('kelas') ?>">Menu 2</a></li>
+          <li><a href="<?= base_url('ta/setting') ?>">Tahun Akademik</a></li>
         </ul>
       </li>
 
