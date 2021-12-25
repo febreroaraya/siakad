@@ -6,7 +6,7 @@ use App\Models\Mdl_Guru;
 
 class Guru extends BaseController
 {
-    public function _ _construct()
+    public function __construct()
     {
         helper('form');
         $this->Mdl_Guru = new Mdl_Guru();

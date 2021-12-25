@@ -302,3 +302,43 @@ CRITICAL - 2021-12-25 11:33:30 --> syntax error, unexpected '_construct' (T_STRI
 #4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2021-12-25 11:45:05 --> syntax error, unexpected '_construct' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('guru')
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('guru')
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-25 11:45:07 --> syntax error, unexpected '_construct' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('guru')
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('guru')
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-25 11:45:07 --> syntax error, unexpected '_construct' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('guru')
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('guru')
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-25 11:45:08 --> syntax error, unexpected '_construct' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('guru')
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('guru')
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-25 11:52:11 --> syntax error, unexpected '_construct' (T_STRING), expecting '('
+#0 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Router\Router.php(176): CodeIgniter\Router\Router->autoRoute('guru')
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(718): CodeIgniter\Router\Router->handle('guru')
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(359): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
