@@ -35,4 +35,5 @@ class Mdl_User extends Model
             ->where('id_user', $data['id_user'])
             ->delete($data);
     }
+    
 }

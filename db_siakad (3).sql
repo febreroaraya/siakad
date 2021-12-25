@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 23, 2021 at 07:05 PM
+-- Generation Time: Dec 25, 2021 at 06:46 PM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.3.31
 
@@ -41,8 +41,10 @@ CREATE TABLE `tbl_guru` (
 --
 
 INSERT INTO `tbl_guru` (`id_guru`, `kode_guru`, `nip`, `nama_guru`, `foto_guru`, `password`) VALUES
-(1, 'G000001', '111111111', 'Drs. Rahmat Basuki S.Pd ', 'guru 1.png', 1234),
-(2, 'G000002', '111111112', 'Yuswa Leksmana S.Pd', 'guru 2.png', 1234);
+(1, 'G000001', '111111111', 'Drs. Rahmat Basuki S.Pd ', 'guru1.png', 1234),
+(2, 'G000002', '111111112', 'Yuswa Leksmana S.Pd', 'guru2.png', 1234),
+(8, 'G000003', '111111113', 'Puguh Wicaksono S.Pd', 'guru3.jpg', 12345),
+(9, 'G000004', '111111114', 'Evi sulistiani', '1640347092_3e3f0f2aa212ff3d19f1.png', 123);
 
 -- --------------------------------------------------------
 
@@ -200,7 +202,8 @@ INSERT INTO `tb_user` (`id_user`, `nama_user`, `username`, `password`, `foto`) V
 (1, 'Febrero', 'admin', 'admin', 'foto1.png'),
 (2, 'Araya', 'guru', 'guru', 'foto2.png'),
 (3, 'Kusuma', 'siswa', 'siswa', 'foto3.png'),
-(4, 'Irfan', 'aaa', '12345', '1640192073_72906f9137cdb6727b75.jpg');
+(6, 'angga', 'Siswa', '12345', '1640439472_adced5d6c5190181520a.png'),
+(7, 'Gunawan', 'gunawan', '1234', '1640449672_c19a9b7e7f4747104e0b.png');
 
 --
 -- Indexes for dumped tables
@@ -262,7 +265,7 @@ ALTER TABLE `tb_user`
 -- AUTO_INCREMENT for table `tbl_guru`
 --
 ALTER TABLE `tbl_guru`
-  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `tbl_ruangan`
@@ -304,7 +307,7 @@ ALTER TABLE `tb_ta`
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
