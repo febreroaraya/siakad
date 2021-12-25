@@ -49,7 +49,13 @@ class Filters extends BaseConfig
                 'ta', 'ta/*',
                 'mapel', 'mapel/*',
                 'user', 'user/*',
+<<<<<<< Updated upstream
                 'guru', 'guru/*',
+=======
+                'Guru', 'Guru/*',
+                'fakultas', 'fakultas/*',
+                'jadwalpelajaran', 'jadwalpelajaran/*',
+>>>>>>> Stashed changes
             ]],
             'toolbar',
             // 'honeypot',
