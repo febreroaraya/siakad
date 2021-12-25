@@ -13,6 +13,7 @@ class User extends BaseController
         helper('form');
         $this->Mdl_User = new Mdl_User();
     }
+
     public function index()
     {
         $data = [
@@ -37,7 +38,7 @@ class User extends BaseController
                 'label' => 'Username',
                 'rules' => 'required',
                 'errors'    =>  [
-                    'required'  => '{field} Wajib Diisi!',
+                    'required'  => '{field} Wajib Diisi!'
                 ]
             ],
             'password'  => [
@@ -51,7 +52,7 @@ class User extends BaseController
                 'label' => 'Foto',
                 'rules' => 'uploaded[foto]|max_size[foto,1024]|mime_in[foto,image/png,image/jpg,image/jpeg,image/gif,image/ico]',
                 'errors'    =>  [
-                    'uploaded'  => '{field} Wajib Diisi!',
+                    'uploaded' => '{field} Wajib Diisi!',
                     'max_size'  => '{field} Max 1024 KB',
                     'mime_in'  => 'Format {field} Wajib PNG, JPG, JPEG, GIF, ICO,'
                 ]
@@ -66,8 +67,9 @@ class User extends BaseController
                 'nama_user' => $this->request->getPost('nama_user'),
                 'username' => $this->request->getPost('username'),
                 'password' => $this->request->getPost('password'),
-                'foto' => $nama_file,
+                'foto' => $nama_file
             );
+            //memindahkan file foto dari form input ke folder foto di directory
             $foto->move('foto', $nama_file);
             $this->Mdl_User->add($data);
             session()->setFlashdata('pesan', 'Data berhasil di tambahkan');
@@ -93,13 +95,13 @@ class User extends BaseController
                 'label' => 'Username',
                 'rules' => 'required',
                 'errors'    =>  [
-                    'required'  => '{field} Wajib Diisi!',
+                    'required'  => '{field} Wajib Diisi!'
                 ]
             ],
             'password'  => [
                 'label' => 'Password',
                 'rules' => 'required',
-                'errors'    =>  [
+                'errors'    =>  [ 
                     'required'  => '{field} Wajib Diisi!'
                 ]
             ],
@@ -116,7 +118,6 @@ class User extends BaseController
             $foto = $this->request->getFile('foto');
 
             if ($foto->getError() == 4) {
-                //jika valid
                 $data = array(
                     'id_user' => $id_user,
                     'nama_user' => $this->request->getPost('nama_user'),
@@ -125,9 +126,9 @@ class User extends BaseController
                 );
                 $this->Mdl_User->edit($data);
             } else {
-                //menghapus foro
+                //menghapus foto lama
                 $user = $this->Mdl_User->detail_data($id_user);
-                if ($user['foto'] != "") {
+                if ($user['foto'] !== "") {
                     unlink('foto/' . $user['foto']);
                 }
                 //merename nama file foto
@@ -140,11 +141,12 @@ class User extends BaseController
                     'password' => $this->request->getPost('password'),
                     'foto' => $nama_file,
                 );
+                //memindahkan file foto dari form input ke folder foto di directory
                 $foto->move('foto', $nama_file);
-                $this->Mdl_User->edit($data);
-            }
+                $this->Mdl_User->add($data);
 
-            session()->setFlashdata('pesan', 'Data berhasil di Ganti');
+            }
+            session()->setFlashdata('pesan', 'Data Berhasil Diganti !!');
             return redirect()->to(base_url('user'));
         } else {
             //jika tidak valid 
@@ -152,18 +154,8 @@ class User extends BaseController
             return redirect()->to(base_url('user'));
         }
     }
-    public function delete($id_user)
-    {
-        //menghapus foro
-        $user = $this->Mdl_User->detail_data($id_user);
-        if ($user['foto'] != "") {
-            unlink('foto/' . $user['foto']);
-        }
-        $data = [
-            'id_user' => $id_user,
-        ];
-        $this->Mdl_User->delete_data($data);
-        session()->setFlashdata('pesan', 'Data berhasil dihapus!');
-        return redirect()->to(base_url('user'));
-    }
 }
+
+
+
+           

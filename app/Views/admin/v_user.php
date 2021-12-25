@@ -22,7 +22,7 @@
                 <?php
                 $errors = session()->getFlashdata('errors');
                 if (!empty($errors)) { ?>
-                    <div class="alert alert-danger" role="alert">
+                    <div class="alert alert-danger" role="alert">   
                         <ul>
                             <?php foreach ($errors as $key => $value) { ?>
                                 <li><?= esc($value) ?></li>
@@ -70,7 +70,7 @@
             </div>
             <!-- /.box-body -->
         </div>
-        <!-- /.box -->
+        <!-- /.box --> 
     </div>
 </div>
 
@@ -138,7 +138,7 @@
                     ?>
                     <div class="form-group">
                         <label>Nama User</label>
-                        <input name="nama_user" value="<?= $value['nama_user'] ?>" class="form-control" placeholder="Gedung" required>
+                        <input name="nama_user" value="<?= $value['nama_user'] ?>" class="form-control" placeholder="Nama User" required>
                     </div>
                     <div class="form-group">
                         <label>Username</label>
@@ -151,9 +151,10 @@
                     </div>
 
                     <div class="form-group">
-                        <label>Foto</label>
+                        <label>Ganti Foto</label>
                         <input type="file" name="foto" class="form-control">
                     </div>
+        
                     <div class="form-group">
                         <img src="<?= base_url('foto/' . $value['foto']) ?>" class="img-circle" width="60px" height="60px">
                     </div>

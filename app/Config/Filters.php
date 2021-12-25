@@ -49,7 +49,7 @@ class Filters extends BaseConfig
                 'ta', 'ta/*',
                 'mapel', 'mapel/*',
                 'user', 'user/*',
-                'Guru', 'Guru/*',
+                'guru', 'guru/*',
             ]],
             'toolbar',
             // 'honeypot',
