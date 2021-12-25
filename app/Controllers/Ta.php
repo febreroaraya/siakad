@@ -17,7 +17,7 @@ class Ta extends BaseController
         $data = [
             'title' => 'Tahun Akademik',
             'Ta'    => $this->Mdl_Ta->allData(),
-            'isi'   => 'admin/v_Ta'
+            'isi'   => 'admin/v_ta'
         ];
         return view('layout/v_wrapper', $data);
     }
