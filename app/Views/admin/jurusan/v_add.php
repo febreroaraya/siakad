@@ -55,6 +55,16 @@
                          <input name="jurusan" class="form-control" placeholder="jurusan">
                     </div>
 
+                    <div class="form-group">
+                         <label>KA Jurusan</label>
+                         <select name="ka_jurusan" class="form-control">
+                              <option value="">Pilih KA Jurusan</option>
+                              <option value="Yuswa Leksmana S.Pd">Pilih KA Jurusan</option>
+                          
+                        </select>
+                    </div>
+
+
                </div>
 
                <div class="modal-footer">

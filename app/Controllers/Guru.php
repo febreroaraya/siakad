@@ -2,7 +2,7 @@
 
 namespace App\Controllers;
 
-use App\Models\Mdl_Guru;
+use App\Models\Mdl_guru;
 
 class Guru extends BaseController
 {
@@ -16,7 +16,11 @@ class Guru extends BaseController
     {
         $data = [
             'title' => 'Guru',
+<<<<<<< Updated upstream
             'guru' => $this->Mdl_Guru->allData(),
+=======
+            'guru'  => $this->Mdl_guru->allData(),
+>>>>>>> Stashed changes
             'isi'   => 'admin/guru/v_index'
         ]; 
         return view('layout/v_wrapper', $data);
