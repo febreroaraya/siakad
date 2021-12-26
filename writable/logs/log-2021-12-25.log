@@ -342,3 +342,13 @@ CRITICAL - 2021-12-25 11:52:11 --> syntax error, unexpected '_construct' (T_STRI
 #4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+CRITICAL - 2021-12-25 20:01:15 --> unlink(foto/foto3.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/fot...', 'C:\\xampp\\htdocs...', 132, Array)
+#1 C:\xampp\htdocs\siakad\app\Controllers\User.php(132): unlink('foto/foto3.png')
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\User->edit('3')
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-12-25 20:15:49 --> Duplicate entry '8' for key 'PRIMARY'
