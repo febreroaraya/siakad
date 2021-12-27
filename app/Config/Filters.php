@@ -50,6 +50,7 @@ class Filters extends BaseConfig
                 'mapel', 'mapel/*',
                 'user', 'user/*',
                 'guru', 'guru/*',
+                'siswa', 'siswa/*',
                 'fakultas', 'fakultas/*',
                 'jadwalpelajaran', 'jadwalpelajaran/*',
             ]],

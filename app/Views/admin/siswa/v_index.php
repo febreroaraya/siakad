@@ -32,30 +32,16 @@
                     <thead>
                         <tr>
                             <th class="text-center" width="50px">No</th>
-                            <th>Kode Guru</th>
-                            <th>NIP</th>
-                            <th>Nama Guru</th>
+                            <th>NIS</th>
+                            <th>Nama Siswa</th>
+                            <th>Jurusan</th>
                             <th>Password</th>
                             <th>Foto</th>
                             <th class="text-center" width="150px">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $no = 1;
-                        foreach ($guru as $key => $value) { ?>
-                            <tr>
-                                <td class="text-center"><?= $no++ ?></td>
-                                <td><?= $value['kode_guru'] ?></td>
-                                <td><?= $value['nip'] ?></td>
-                                <td><?= $value['nama_guru'] ?></td>
-                                <td><?= $value['password'] ?></td>
-                                <td class="text-center"><img src="<?= base_url('fotoguru/' . $value['foto_guru']) ?>" class="img-circle" width="60px" height="60px"></td>
-                                <td class="text-center">
-                                    <a href="<?= base_url('guru/edit/' . $value['id_guru']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
-                                    <a href="<?= base_url('guru/delete/' . $value['id_guru']) ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i></a>
-                                </td>
-                            </tr>
-                        <?php } ?>
+                        
                     </tbody>
                 </table>
             </div>
