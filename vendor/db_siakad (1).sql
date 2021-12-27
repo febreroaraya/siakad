@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Waktu pembuatan: 25 Des 2021 pada 21.31
--- Versi server: 10.4.21-MariaDB
--- Versi PHP: 8.0.10
+-- Host: localhost:8889
+-- Waktu pembuatan: 27 Des 2021 pada 18.51
+-- Versi server: 5.7.34
+-- Versi PHP: 7.4.21
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,8 +41,10 @@ CREATE TABLE `tbl_guru` (
 --
 
 INSERT INTO `tbl_guru` (`id_guru`, `kode_guru`, `nip`, `nama_guru`, `foto_guru`, `password`) VALUES
-(1, 'G000001', '111111111', 'Drs. Rahmat Basuki S.Pd ', 'guru 1.png', 1234),
-(2, 'G000002', '111111112', 'Yuswa Leksmana S.Pd', 'guru 2.png', 1234);
+(1, 'G000001', '111111111', 'Drs. Rahmat Basuki S.Pd ', 'guru1.png', 1234),
+(2, 'G000002', '111111112', 'Yuswa Leksmana S.Pd', 'guru2.png', 1234),
+(8, 'G000003', '111111113', 'Puguh Wicaksono S.Pd', 'guru3.jpg', 12345),
+(9, 'G000004', '111111114', 'Evi sulistiani', '1640347092_3e3f0f2aa212ff3d19f1.png', 123);
 
 -- --------------------------------------------------------
 
@@ -61,7 +63,7 @@ CREATE TABLE `tbl_jadwal` (
   `waktu` varchar(255) DEFAULT NULL,
   `id_ruangan` int(2) DEFAULT NULL,
   `quota` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data untuk tabel `tbl_jadwal`
@@ -69,8 +71,9 @@ CREATE TABLE `tbl_jadwal` (
 
 INSERT INTO `tbl_jadwal` (`id_jadwal`, `id_jurusan`, `id_ta`, `id_kelas`, `id_mapel`, `id_guru`, `hari`, `waktu`, `id_ruangan`, `quota`) VALUES
 (1, 1, 1, 1, 1, 1, 'senin', '08:00-10:00', 3, 32),
-(2, 1, 1, 1, 1, 2, 'selasa', '08:00-10:00', 4, 32),
-(3, 2, 1, 2, 2, 2, 'selasa', '08:00-10:00', 5, 32);
+(2, 1, 1, 1, 1, 2, 'senin', '10:00-12:00', 4, 32),
+(3, 1, 1, 1, 1, 1, 'senin', '10:00-12:00', 4, 32),
+(4, 1, 1, 1, 1, 2, 'senin', '08:00-10:00', 3, 32);
 
 -- --------------------------------------------------------
 
@@ -105,15 +108,7 @@ CREATE TABLE `tb_fakultas` (
   `id_jurusan` int(2) DEFAULT NULL,
   `id_guru` int(11) DEFAULT NULL,
   `tahun_angkatan` year(4) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data untuk tabel `tb_fakultas`
---
-
-INSERT INTO `tb_fakultas` (`id_fakultas`, `fakultas`, `id_jurusan`, `id_guru`, `tahun_angkatan`) VALUES
-(1, 'MTK-A', 1, 1, 2021),
-(2, 'MTK-B', 1, 2, 2021);
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -153,8 +148,9 @@ CREATE TABLE `tb_jurusan` (
 --
 
 INSERT INTO `tb_jurusan` (`id_jurusan`, `id_kelas`, `kode_jurusan`, `jurusan`, `ka_jurusan`) VALUES
-(1, 1, 'IPA', 'ilmu pengetahuan alam', 'Yuswa Leksmana S.Pd'),
-(2, 2, 'IPS', 'ilmu pengetahua sosial', NULL);
+(1, 1, 'IPA', 'ilmu pengetahuan alam', 'Rudi, S.Pd'),
+(2, 2, 'IPS', 'ilmu pengetahua sosial', 'Imam, S.Pd'),
+(6, 3, 'BI', 'Bahasa Indonesia', 'Endang, S.Pd');
 
 -- --------------------------------------------------------
 
@@ -199,7 +195,8 @@ INSERT INTO `tb_mapel` (`id_mapel`, `kode_mapel`, `mapel`, `kategori`, `semester
 (1, '0011', 'IPA', 'wajib', 'Ganjil', 2),
 (2, '0033', 'IPS', 'wajib', 'Genap', 1),
 (3, '0044', 'FISIKA', 'wajib', 'Ganjil', 2),
-(4, '0066', 'KIMIA', 'wajib', 'Genap', 2);
+(4, '0066', 'KIMIA', 'wajib', 'Genap', 2),
+(7, '001', 'Matematika', 'wajib', 'Ganjil', 1);
 
 -- --------------------------------------------------------
 
@@ -211,7 +208,7 @@ CREATE TABLE `tb_ta` (
   `id_ta` int(4) NOT NULL,
   `ta` varchar(10) DEFAULT NULL,
   `semester` varchar(10) DEFAULT NULL,
-  `status` int(1) DEFAULT 0
+  `status` int(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -223,7 +220,7 @@ INSERT INTO `tb_ta` (`id_ta`, `ta`, `semester`, `status`) VALUES
 (2, '2022/2023', 'Genap', 0),
 (3, '2023/2024', 'Ganjil', 0),
 (4, '2024/2025', 'Ganjil', 0),
-(6, '2021/2022', 'Genap', 0),
+(6, '2021/2022', 'Genap', 1),
 (7, '2022/2023', 'Ganjil', 0),
 (8, '2023/2024', 'Genap', 0),
 (9, '2024/2025', 'Genap', 0);
@@ -249,11 +246,18 @@ CREATE TABLE `tb_user` (
 INSERT INTO `tb_user` (`id_user`, `nama_user`, `username`, `password`, `foto`) VALUES
 (1, 'Febrero', 'admin', 'admin', 'foto1.png'),
 (2, 'Araya', 'guru', 'guru', 'foto2.png'),
-(3, 'Kusuma', 'siswa', 'siswa', 'foto3.png');
+(3, 'Kusuma', 'siswa', 'siswa', '1640592511_41cd1a65f2ead410cf18.png'),
+(9, 'Rudi', 'rudi', '1234', '1640592551_c30bcf5b3821c5ab904a.png');
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indeks untuk tabel `tbl_guru`
+--
+ALTER TABLE `tbl_guru`
+  ADD PRIMARY KEY (`id_guru`);
 
 --
 -- Indeks untuk tabel `tbl_jadwal`
@@ -314,10 +318,16 @@ ALTER TABLE `tb_user`
 --
 
 --
+-- AUTO_INCREMENT untuk tabel `tbl_guru`
+--
+ALTER TABLE `tbl_guru`
+  MODIFY `id_guru` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
 -- AUTO_INCREMENT untuk tabel `tbl_jadwal`
 --
 ALTER TABLE `tbl_jadwal`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_ruangan`
@@ -329,7 +339,7 @@ ALTER TABLE `tbl_ruangan`
 -- AUTO_INCREMENT untuk tabel `tb_fakultas`
 --
 ALTER TABLE `tb_fakultas`
-  MODIFY `id_fakultas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_fakultas` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_gedung`
@@ -347,25 +357,25 @@ ALTER TABLE `tb_jurusan`
 -- AUTO_INCREMENT untuk tabel `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
-  MODIFY `id_kelas` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_kelas` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
-  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_ta`
 --
 ALTER TABLE `tb_ta`
-  MODIFY `id_ta` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_ta` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
