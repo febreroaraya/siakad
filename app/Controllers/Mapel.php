@@ -28,7 +28,7 @@ class Mapel extends BaseController
         $data = [
             'title' => 'Mata Pelajaran',
             'jurusan' => $this->Mdl_jurusan->detail_Data($id_jurusan),
-            'mapel' => $this->Mdl_mapel->allDataMapel($id_jurusan),
+            'mapel' => $this->Mdl_mapel->allDataMapel($id_mapel),
             'isi'   => 'admin/mapel/v_detail'
         ];
         return view('layout/v_wrapper', $data);
@@ -84,10 +84,10 @@ class Mapel extends BaseController
             return redirect()->to(base_url('mapel/detail/' . $id_jurusan));
         }
     }
-    public function delete($id_jurusan,  $id_matkul)
+    public function delete($id_jurusan,  $id_mapel)
     {
          $data = [
-              'id_mapel' => $id_matkul,
+              'id_mapel' => $id_mapel,
          ];
          $this->Mdl_mapel->delete_data($data);
          session()->setFlashdata('pesan', 'Data berhasil dihapus!');

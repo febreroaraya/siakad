@@ -29,9 +29,10 @@
                          <thead>
                               <tr>
                                    <th class="text-center" width="50px">No</th>
-                                   <th>Kelas</th>
-                                   <th>Kode Jurusan</th>
-                                   <th>Jurusan</th>
+                                   <th class="text-center">Kelas</th>
+                                   <th class="text-center">Kode Jurusan</th>
+                                   <th class="text-center">Jurusan</th>
+                                   <th class="text-center">KA Jurusan</th>
                                    <th class="text-center" width="150px">Action</th>
                               </tr>
                          </thead>
@@ -43,6 +44,7 @@
                                         <td><b><?= $value['kelas'] ?></b></td>
                                         <td><?= $value['kode_jurusan'] ?></td>
                                         <td><?= $value['jurusan'] ?></td>
+                                        <td><?= $value['ka_jurusan'] ?></td>
                                         <td class="text-center">
                                              <a href="<?= base_url('jurusan/edit/' . $value['id_jurusan']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
                                              <a href="<?= base_url('jurusan/delete/' . $value['id_jurusan']) ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i></a>

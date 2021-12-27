@@ -13,10 +13,10 @@ class Mdl_mapel extends Model
             ->get()->getResultArray();
     }
 
-    public function allDataMapel($id_jurusan)
+    public function allDataMapel($id_mapel)
     {
         return $this->db->table('tb_mapel')
-        ->where('id_jurusan',$id_jurusan)
+        ->where('id_mapel',$id_mapel)
         ->orderBy('semester', 'ASC')
         ->get()->getResultArray();
     }

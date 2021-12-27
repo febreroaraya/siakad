@@ -28,4 +28,17 @@ class Mdl_Ta extends Model
             ->where('id_ta', $data['id_ta'])
             ->delete($data);
     }
+
+    public function reset_status_ta()
+    {
+        $this->db->table('tb_ta')->update(['status' => 0]);
+    }
+
+    public function ta_aktif()
+    {
+      return $this->db->table('tb_ta')
+            ->where('status', 1)
+            ->get()
+            ->getRowArray();
+    }
 }
