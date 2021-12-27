@@ -19,6 +19,7 @@ class Mdl_User extends Model
             ->where('id_user', $id_user)
             ->get()->getRowArray();
     }
+
     public function add($data)
     {
         $this->db->table('tb_user')->insert($data);
