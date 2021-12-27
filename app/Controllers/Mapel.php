@@ -28,7 +28,7 @@ class Mapel extends BaseController
         $data = [
             'title' => 'Mata Pelajaran',
             'jurusan' => $this->Mdl_jurusan->detail_Data($id_jurusan),
-            'mapel' => $this->Mdl_mapel->allDataMapel($id_mapel),
+            'mapel' => $this->Mdl_mapel->allDataMapel($id_jurusan),
             'isi'   => 'admin/mapel/v_detail'
         ];
         return view('layout/v_wrapper', $data);
