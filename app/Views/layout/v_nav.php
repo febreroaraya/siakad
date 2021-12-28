@@ -45,7 +45,7 @@
 <div class="navbar-custom-menu">
   <ul class="nav navbar-nav">
     <?php if (session()->get('username') == "") { ?>
-      <li><a href="<?= base_url('auth') ?>"><i class="fa fa-sign-in"></i>Login</a></li>
+      <li><a href="<?= base_url('auth') ?>"><i class="fa fa-sign-in"></i> Login</a></li>
     <?php } else { ?>
 
       <li class="dropdown user user-menu">
