@@ -1,0 +1,37 @@
+CRITICAL - 2021-12-27 02:34:48 --> Undefined property: App\Controllers\Guru::$Mdl_guru
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Guru.php(19): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', '/Applications/M...', 19)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Guru->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2021-12-27 02:41:36 --> Call to a member function getRandomName() on null
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Guru->update('9')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-27 02:44:18 --> Call to a member function getRandomName() on null
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Guru->update('9')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-27 02:48:24 --> Call to a member function getRandomName() on null
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Guru->update('9')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Guru))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-27 13:14:39 --> Undefined variable $id_mapel
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Mapel.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 31)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
