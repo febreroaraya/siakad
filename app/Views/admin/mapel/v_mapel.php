@@ -8,12 +8,6 @@
 <div class="row">
      <div class="col-sm-12">
           <div class="box box-primary box-solid">
-               <div class="box-header with-border">
-                    <h3 class="box-title">Data <?= $title ?></h3>
-                    <div class="box-tools pull-right">
-                    </div>
-                    <!-- /.box-tools -->
-               </div>
                <!-- /.box-header -->
                <div class="box-body">
                     <table class="table table-bordered table-striped">
@@ -29,22 +23,21 @@
                          </thead>
                          <tbody>
                               <?php
-                              $db = \config\Database::connect();
-
-
+                              $db = \Config\Database::connect();
                               $no = 1;
                               foreach ($jurusan as $key => $value) {
                                    $jml = $db->table('tb_mapel')
                                         ->where('id_jurusan', $value['id_jurusan'])
                                         ->countAllResults();
-
                               ?>
                                    <tr>
                                         <td class="text-center"><?= $no++ ?></td>
                                         <td><b><?= $value['kelas'] ?></b></td>
                                         <td><?= $value['kode_jurusan'] ?></td>
                                         <td><?= $value['jurusan'] ?></td>
-                                        <td class="text-center"> <?= $jml ?></td>
+                                        <td class="text-center">
+                                             <p class="label text-center bg-green"><?= $jml ?></p>
+                                        </td>
                                         <td class="text-center">
                                              <a href="<?= base_url('mapel/detail/' . $value['id_jurusan']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-th-list"></i> Mapel</a>
 

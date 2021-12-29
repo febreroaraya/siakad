@@ -52,15 +52,15 @@ class Mapel extends BaseController
                     'required'  => '{field} Wajib Diisi!'
                 ]
             ],
-            'semester'  => [
-                'label' => 'Semester',
+            'kategori'  => [
+                'label' => 'Kategori',
                 'rules' => 'required',
                 'errors'    =>  [
                     'required'  => '{field} Wajib Diisi!'
                 ]
             ],
-            'kategori'  => [
-                'label' => 'Kategori',
+            'semester'  => [
+                'label' => 'Semester',
                 'rules' => 'required',
                 'errors'    =>  [
                     'required'  => '{field} Wajib Diisi!'

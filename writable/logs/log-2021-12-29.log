@@ -442,3 +442,38 @@ CRITICAL - 2021-12-29 11:14:08 --> Undefined variable $guru
 #16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
 #17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
 #18 {main}
+CRITICAL - 2021-12-29 11:20:32 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('7')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 11:21:19 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('7')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 12:42:01 --> Too few arguments to function App\Controllers\JadwalPelajaran::detailjadwal(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 12:46:07 --> Too few arguments to function App\Controllers\Mapel::add(), 0 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->add()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 12:57:32 --> Too few arguments to function App\Controllers\Mapel::add(), 0 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 1 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->add()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
