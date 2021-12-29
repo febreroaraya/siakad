@@ -26,7 +26,7 @@ class Mdl_fakultas extends Model
 
     public function add($data)
     {
-        $this->db->tabel('tb_fakultas')->insert($data);
+        $this->db->table('tb_fakultas')->insert($data);
     }
 
     public function delete_data($data)

@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\Mdl_fakultas;
-//use App\Models\Mdl_guru;
+use App\Models\Mdl_guru;
 use App\Models\Mdl_jurusan;
 
 class Fakultas extends BaseController
@@ -11,7 +11,7 @@ class Fakultas extends BaseController
     public function __construct()
     {
         $this->Mdl_fakultas = new Mdl_fakultas();
-        //$this->Mdl_guru = new Mdl_guru();
+        $this->Mdl_guru = new Mdl_guru();
         $this->Mdl_jurusan = new Mdl_jurusan();
         helper('form');
     }
@@ -21,7 +21,7 @@ class Fakultas extends BaseController
         $data = [
             'title' => 'Data Fakultas',
             'fakultas' => $this->Mdl_fakultas->allData(),
-            //'guru' => $this->Mdl_guru->allData(),
+            'guru' => $this->Mdl_guru->allData(),
             'jurusan' => $this->Mdl_jurusan->allData(),
             'isi'   => 'admin/fakultas/v_fakultas'
         ];
@@ -66,6 +66,7 @@ class Fakultas extends BaseController
             $data = [
                 'fakultas' => $this->request->getPost('fakultas'),
                 'id_jurusan' => $this->request->getPost('id_jurusan'),
+                'id_guru' => $this->request->getPost('id_guru'),
                 'tahun_angkatan' => $this->request->getPost('tahun_angkatan'),
             ];
             $this->Mdl_fakultas->add($data);
