@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 use App\Models\Mdl_jurusan;
 use App\Models\Mdl_kelas;
-//use App\Models\Mdl_guru;
+use App\Models\Mdl_guru;
 
 
 class Jurusan extends BaseController
@@ -14,7 +14,7 @@ class Jurusan extends BaseController
         helper('form');
         $this->Mdl_jurusan = new Mdl_jurusan();
         $this->Mdl_kelas = new Mdl_kelas();
-       // $this->Mdl_guru = new Mdl_guru();
+        $this->Mdl_guru = new Mdl_guru();
     }
     public function index()
     {
@@ -31,7 +31,7 @@ class Jurusan extends BaseController
         $data = [
             'title' => 'Add jurusan',
             'kelas' => $this->Mdl_kelas->allData(),
-            //'guru' => $this->Mdl_guru->allData(),
+            'guru' => $this->Mdl_guru->allData(),
             'isi'   => 'admin/jurusan/v_add'
         ];
         return view('layout/v_wrapper', $data);
@@ -86,7 +86,7 @@ class Jurusan extends BaseController
             'title' => 'edit jurusan',
             'kelas' => $this->Mdl_kelas->allData(),
             'jurusan' => $this->Mdl_jurusan->detail_Data($id_jurusan),
-            //'guru' => $this->Mdl_guru->allData(),
+            'guru' => $this->Mdl_guru->allData(),
             'isi'   => 'admin/jurusan/v_edit'
         ];
         return view('layout/v_wrapper', $data);
