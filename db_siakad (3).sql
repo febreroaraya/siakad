@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Waktu pembuatan: 29 Des 2021 pada 06.19
+-- Waktu pembuatan: 29 Des 2021 pada 11.03
 -- Versi server: 5.7.34
 -- Versi PHP: 7.4.21
 
@@ -92,9 +92,15 @@ CREATE TABLE `tbl_ruangan` (
 --
 
 INSERT INTO `tbl_ruangan` (`id_ruangan`, `id_gedung`, `ruangan`) VALUES
+(1, 1, 'A1'),
+(2, 1, 'A2'),
 (3, 1, 'A3'),
-(4, 1, 'A4'),
-(5, 2, 'A5');
+(4, 2, 'B1'),
+(5, 2, 'B2'),
+(6, 2, 'B3'),
+(7, 3, 'C1'),
+(8, 3, 'C2'),
+(9, 3, 'C3');
 
 -- --------------------------------------------------------
 
@@ -142,7 +148,8 @@ CREATE TABLE `tb_gedung` (
 
 INSERT INTO `tb_gedung` (`id_gedung`, `gedung`) VALUES
 (1, 'Gedung A'),
-(2, 'Gedung B');
+(2, 'Gedung B'),
+(3, 'Gedung C');
 
 -- --------------------------------------------------------
 
@@ -163,9 +170,15 @@ CREATE TABLE `tb_jurusan` (
 --
 
 INSERT INTO `tb_jurusan` (`id_jurusan`, `id_kelas`, `kode_jurusan`, `jurusan`, `ka_jurusan`) VALUES
-(1, 1, 'IPA', 'ilmu pengetahuan alam', 'Rudi, S.Pd'),
-(2, 2, 'IPS', 'ilmu pengetahua sosial', 'Imam, S.Pd'),
-(6, 3, 'BI', 'Bahasa Indonesia', 'Endang, S.Pd');
+(1, 3, 'IPA', 'Ilmu Pengetahuan Alam', 'Rudi, S.Pd'),
+(2, 3, 'IPS', 'Ilmu Pengetahuan Sosial', 'Imam, S.Pd'),
+(3, 3, 'BHS', 'Bahasa', 'Endang, S.Pd'),
+(4, 2, 'IPA', 'Ilmu Pengetahuan Alam', 'Tohari, S.Pd'),
+(5, 2, 'IPS', 'Ilmu Pengetahuan Sosial', 'Nurdin, S.Pd'),
+(6, 2, 'BHS', 'Bahasa', 'Rahmat, S.Pd'),
+(7, 1, 'IPA', 'Ilmu Pengetahuan Alam', 'Munif, S.Pd'),
+(8, 1, 'IPS', 'Ilmu Pengetahuan Sosial', 'Doni, S.Pd'),
+(9, 1, 'BHS', 'Bahasa', 'Agus, S.Pd');
 
 -- --------------------------------------------------------
 
@@ -183,9 +196,9 @@ CREATE TABLE `tb_kelas` (
 --
 
 INSERT INTO `tb_kelas` (`id_kelas`, `kelas`) VALUES
-(1, 'Kelas 12'),
+(1, 'Kelas 10'),
 (2, 'Kelas 11'),
-(3, 'Kelas 10');
+(3, 'Kelas 12');
 
 -- --------------------------------------------------------
 
@@ -195,8 +208,8 @@ INSERT INTO `tb_kelas` (`id_kelas`, `kelas`) VALUES
 
 CREATE TABLE `tb_mapel` (
   `id_mapel` int(11) NOT NULL,
-  `kode_mapel` varchar(225) DEFAULT NULL,
-  `mapel` varchar(10) DEFAULT NULL,
+  `kode_mapel` varchar(10) DEFAULT NULL,
+  `mapel` varchar(255) DEFAULT NULL,
   `kategori` varchar(10) DEFAULT NULL,
   `semester` varchar(10) DEFAULT NULL,
   `id_jurusan` int(11) DEFAULT NULL
@@ -207,11 +220,8 @@ CREATE TABLE `tb_mapel` (
 --
 
 INSERT INTO `tb_mapel` (`id_mapel`, `kode_mapel`, `mapel`, `kategori`, `semester`, `id_jurusan`) VALUES
-(1, '0011', 'IPA', 'wajib', 'Ganjil', 2),
-(2, '0033', 'IPS', 'wajib', 'Genap', 1),
-(3, '0044', 'FISIKA', 'wajib', 'Ganjil', 2),
-(4, '0066', 'KIMIA', 'wajib', 'Genap', 2),
-(7, '001', 'Matematika', 'wajib', 'Ganjil', 1);
+(8, 'IPA10-01', 'MATEMATIKA', 'Wajib', 'Ganjil', 1),
+(9, 'IPA10-02', 'FISIKA', 'Wajib', 'Ganjil', 1);
 
 -- --------------------------------------------------------
 
@@ -232,13 +242,13 @@ CREATE TABLE `tb_ta` (
 
 INSERT INTO `tb_ta` (`id_ta`, `ta`, `semester`, `status`) VALUES
 (1, '2021/2022', 'Ganjil', 1),
-(2, '2022/2023', 'Genap', 0),
-(3, '2023/2024', 'Ganjil', 0),
-(4, '2024/2025', 'Ganjil', 0),
-(6, '2021/2022', 'Genap', 1),
-(7, '2022/2023', 'Ganjil', 0),
-(8, '2023/2024', 'Genap', 0),
-(9, '2024/2025', 'Genap', 0);
+(2, '2021/2022', 'Genap', 0),
+(3, '2022/2023', 'Ganjil', 0),
+(4, '2022/2023', 'Genap', 0),
+(5, '2023/2024', 'Ganjil', 0),
+(6, '2023/2024', 'Genap', 0),
+(7, '2024/2025', 'Ganjil', 0),
+(8, '2024/2025', 'Genap', 0);
 
 -- --------------------------------------------------------
 
@@ -259,10 +269,13 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`id_user`, `nama_user`, `username`, `password`, `foto`) VALUES
-(1, 'Febrero', 'admin', 'admin', 'foto1.png'),
-(2, 'Araya', 'guru', 'guru', 'foto2.png'),
-(3, 'Kusuma', 'siswa', 'siswa', '1640592511_41cd1a65f2ead410cf18.png'),
-(9, 'Rudi', 'rudi', '1234', '1640592551_c30bcf5b3821c5ab904a.png');
+(1, 'Febrero', 'febrero', 'febrero', '1640592511_41cd1a65f2ead410cf18.png'),
+(2, 'Fadhiel', 'fadhiel', 'fadhiel', '1640764935_62f1103c161f87e0d866.png'),
+(3, 'Irfan', 'irfan', 'irfan', '1640765159_15e60186e2f547d334c0.png'),
+(4, 'Ryan', 'ryan', 'ryan', '1640765181_6c0c2806b9be8166b1ca.png'),
+(5, 'Zalfa', 'zalfa', 'zalfa', '1640765204_26728752ce73b5d0b28b.png'),
+(6, 'Fitri', 'fitri', 'fitri', '1640765244_f349899da5a3282bf80f.png'),
+(7, 'Tyas', 'tyas', 'tyas', '1640765278_108dae9caba9c459b0c9.png');
 
 --
 -- Indexes for dumped tables
@@ -354,7 +367,7 @@ ALTER TABLE `tbl_jadwal`
 -- AUTO_INCREMENT untuk tabel `tbl_ruangan`
 --
 ALTER TABLE `tbl_ruangan`
-  MODIFY `id_ruangan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_ruangan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_siswa`
@@ -372,13 +385,13 @@ ALTER TABLE `tb_fakultas`
 -- AUTO_INCREMENT untuk tabel `tb_gedung`
 --
 ALTER TABLE `tb_gedung`
-  MODIFY `id_gedung` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_gedung` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_jurusan`
 --
 ALTER TABLE `tb_jurusan`
-  MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_kelas`
@@ -390,19 +403,19 @@ ALTER TABLE `tb_kelas`
 -- AUTO_INCREMENT untuk tabel `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
-  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_ta`
 --
 ALTER TABLE `tb_ta`
-  MODIFY `id_ta` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_ta` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
