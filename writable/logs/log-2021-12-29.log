@@ -1,0 +1,224 @@
+CRITICAL - 2021-12-29 00:35:38 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:35:45 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('2')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:37:05 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('6')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:37:09 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('2')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:37:44 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:38:45 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:38:48 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:39:58 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:46:56 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 00:48:01 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 01:10:01 --> Undefined variable $jurusan
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/mapel/v_mapel.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 36)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/mapel/v_m...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/mapel/v_m...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Mapel.php(23): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->index()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2021-12-29 01:17:12 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 01:43:11 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('7')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 01:45:01 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 01:48:24 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 01:48:28 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('5')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 01:50:11 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 02:01:48 --> unlink(foto/foto1.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/fot...', '/Applications/M...', 131)
+#1 /Applications/MAMP/htdocs/siakad/app/Controllers/User.php(131): unlink('foto/foto1.png')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\User->edit('1')
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#7 {main}
+CRITICAL - 2021-12-29 02:02:20 --> unlink(foto/foto1.png): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(foto/fot...', '/Applications/M...', 162)
+#1 /Applications/MAMP/htdocs/siakad/app/Controllers/User.php(162): unlink('foto/foto1.png')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\User->delete('1')
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#7 {main}
+CRITICAL - 2021-12-29 03:39:44 --> Undefined variable $jurusan
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jurusan/v_add.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 57)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jurusan/v...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jurusan/v...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jurusan.php(37): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Jurusan->add()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2021-12-29 03:43:32 --> Undefined variable $jurusan
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jurusan/v_add.php(57): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 57)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jurusan/v...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jurusan/v...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jurusan.php(37): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Jurusan->add()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Jurusan))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2021-12-29 05:26:58 --> Too few arguments to function App\Controllers\JadwalPelajaran::detailjadwal(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('7')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 10:59:24 --> Too few arguments to function App\Controllers\Mapel::detail(), 1 passed in /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php on line 824 and exactly 2 expected
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Mapel->detail('1')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mapel))
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#5 {main}
+CRITICAL - 2021-12-29 11:11:39 --> Undefined variable $guru
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/fakultas/v_fakultas.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 117)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/fakultas/...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/fakultas/...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Fakultas.php(28): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Fakultas->index()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
