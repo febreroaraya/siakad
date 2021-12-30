@@ -65,36 +65,37 @@ class Guru extends BaseController
             ],
             'foto_guru'  => [
                 'label' => 'Foto Guru',
-                'rules' => 'uploaded[foto_guru]|max_size[foto_guru,1024]|mime_in[foto_guru,image/png,image/jpg,image/jpeg,image/gif,image/ico]',
+                'rules' => 'uploaded[foto_guru]|max_size[foto_guru,1024]|mime_in[foto_guru,image/png,image/jpeg,image/jpg,image/gif,image/ico]',
                 'errors'    =>  [
-                    'uploaded'  => '{field} Wajib Diisi!',
-                    'max_size'  => '{field} Max 1024 KB',
-                    'mime_in'  => 'Format {field} Wajib PNG, JPG, JPEG, GIF, ICO,'
+                    'uploaded' => '{field} Wajib Diisi!!!',
+                    'max_size'  => '{field} Max 1024 KB!',
+                    'mime_in'  => 'Format {field} Wajib PNG, JPG, JPEG, GIF, ICO!'
                 ]
             ],
         ])) {
-            //mengambil file foto dari form input
-            $foto = $this->request->getFile('foto_guru');
-            //merename nama file foto
-            $nama_file = $foto->getRandomName();
-            //jika valid
-            $data = array(
-                'kode_guru' => $this->request->getPost('kode_guru'),
-                'nip' => $this->request->getPost('nip'),
-                'nama_guru' => $this->request->getPost('nama_guru'),
-                'password' => $this->request->getPost('password'),
-                'foto_guru' => $nama_file,
-            );
-            //memindahkan file foto dari form input ke folder foto di directory
-            $foto->move('fotoguru', $nama_file);
-            $this->Mdl_Guru->add($data);
-            session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan !!');
-            return redirect()->to(base_url('guru'));
-        } else {
-            //jika tidak valid 
-            session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('guru/add'));
-        }
+        //mengambil file foto dari form input
+        $foto = $this->request->getFile('foto_guru');
+        //merename nama file foto
+        $nama_file = $foto->getRandomName();
+        //jika valid
+        $data = array(
+            'kode_guru' => $this->request->getPost('kode_guru'),
+            'nip' => $this->request->getPost('nip'),
+            'nama_guru' => $this->request->getPost('nama_guru'),
+            'password' => $this->request->getPost('password'),
+            'foto_guru' => $nama_file,
+        );
+        //memindahkan file foto dari form input ke folder foto di directory
+        $foto->move('fotoguru', $nama_file);
+        $this->Mdl_Guru->add($data);
+        session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan !!');
+        return redirect()->to(base_url('guru'));
+    } else {
+        //jika tidak valid 
+        session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+        return redirect()->to(base_url('guru'));
+    }
+        
     }
 
     public function edit($id_guru)

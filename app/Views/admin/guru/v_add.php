@@ -20,33 +20,42 @@
                </div>
                <!-- /.box-header -->
                <div class="box-body">
+               
                <?php
-                $errors = session()->getFlashdata('errors');
-                if (!empty($errors)) { ?>
+               $errors = session()->getFlashdata('errors');
+               if (!empty($errors)) { ?>
                     <div class="alert alert-danger" role="alert">
-                        <ul>
-                            <?php foreach ($errors as $key => $value) { ?>
-                                <li><?= esc($value) ?></li>
-                            <?php } ?>
-                        </ul>
+                         <ul>
+                              <?php foreach ($errors as $key => $value) { ?>
+                                   <li><?= esc($value) ?></li>
+                              <?php } ?>
+                         </ul>
                     </div>
                <?php } ?>
+
+               <?php
+                if (session()->getFlashdata('pesan')) {
+                    echo '<div class="alert alert-success" role="alert">';
+                    echo session()->getFlashdata('pesan');
+                    echo '</div>';
+                }
+               ?>
 
                <?php
                echo form_open_multipart('guru/insert');
                ?>
 
                     <div class="col-sm-6">
-                        <div class="form-group">
-                            <label>Kode Guru</label>
-                            <input name="kode_guru" class="form-control" placeholder="Kode Guru">
-                        </div>
+                         <div class="form-group">
+                              <label>Kode Guru</label>
+                              <input name="kode_guru" class="form-control" placeholder="Kode Guru">
+                         </div>
                     </div>
           
                     <div class="col-sm-6">
-                    <div class="form-group">
-                         <label>NIP</label>
-                         <input name="nip" class="form-control" placeholder="NIP">
+                         <div class="form-group">
+                              <label>NIP</label>
+                              <input name="nip" class="form-control" placeholder="NIP">
                          </div>
                     </div>
                
@@ -68,9 +77,9 @@
                     </div>
           
                     <div class="col-sm-6">
-                    <div class="form-group">
-                         <label>Foto Guru</label>
-                         <input type="file" name="foto_guru" id="preview_gambar" class="form-control">
+                         <div class="form-group">
+                              <label>Foto Guru</label>
+                              <input type="file" name="foto_guru" id="preview_gambar" class="form-control">
                          </div>
                     </div>
 
