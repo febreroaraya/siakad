@@ -60,7 +60,7 @@
                          <select name="ka_jurusan" class="form-control">
                               <option value="">Pilih KA Jurusan</option>
                               <?php foreach ($guru as $key => $value) { ?>
-                             <option value="<?= $value['id_guru'] ?>"><?= $value['nama_guru'] ?></option>
+                             <option value="<?= $value['nama_guru'] ?>"><?= $value['nama_guru'] ?></option>
                          <?php }  ?>
 
                           
