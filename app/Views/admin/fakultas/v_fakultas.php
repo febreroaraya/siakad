@@ -5,33 +5,33 @@
     <br>
 </section>
 
+
 <div class="row">
     <div class="col-sm-12">
         <div class="box box-primary box-solid">
             <div class="box-header with-border">
-                <h3 class="box-title">Data <?= $title ?></h3>
+                <h3 class="box-title"><?= $title ?></h3>
 
                 <div class="box-tools pull-right">
                     <button type="button" class="btn btn-box-tool" data-toggle="modal" data-target="#add"><i class="fa fa-plus"></i> Tambah</button>
                 </div>
-                <!-- /.box-tools -->
+              <!-- /.box-tools -->
             </div>
             <!-- /.box-header -->
             <div class="box-body">
                 <?php
                 $errors = session()->getFlashdata('errors');
                 if (!empty($errors)) { ?>
-                    <div class="alert alert-danger" role="alert">
-                        <ul>
-                            <?php foreach ($errors as $key => $value) { ?>
-                                <li><?= esc($value) ?></li>
-                            <?php } ?>
-                        </ul>
-                    </div>
+                        <div class="alert alert-danger" role="alert">
+                            <ul>
+                                <?php foreach ($errors as $key => $value) { ?>
+                                    <li><?= esc($value) ?></li>
+                                <?php } ?>
+                            </ul>
+                        </div>
                 <?php } ?>
 
                 <?php
-
                 if (session()->getFlashdata('pesan')) {
                     echo '<div class="alert alert-success" role="alert">';
                     echo session()->getFlashdata('pesan');
@@ -42,28 +42,34 @@
                     <thead>
                         <tr>
                             <th class="text-center" width="50px">No</th>
-                            <th class="text-center">Fakultas</th>
+                            <th class="text-center">Golongan</th>
                             <th>Jurusan</th>
-                            <th>Guru PAS</th>
-                            <th class="text-center">Tahun Angkatan</th>
-                            <th class="text-center">Jumlah/fakultas</th>
+                            <th>Nama Guru</th>
+                            <th class="text-center">Tahun</th>
+                            <th class="text-center">Jumlah/Golongan</th>
                             <th class="text-center" width="50px">Action</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <?php $no = 1;
-                        foreach ($fakultas as $key => $value) { ?>
+                        <?php 
+                        $db = \Config\Database::connect();
+                        $no = 1; 
+                        foreach ($fakultas as $key => $value) { 
+                            $jml = $db->table('tbl_siswa')
+                            ->where('id_fakultas', $value['id_fakultas'])
+                            ->countAllResults();
+                        ?>
                             <tr>
                                 <td class="text-center"><?= $no++ ?></td>
-                                <td class="text-center"><b><?= $value['fakultas'] ?><b> </td>
+                                <td class="text-center"><b><?= $value['fakultas'] ?></td>
                                 <td><?= $value['jurusan'] ?></td>
                                 <td><?= $value['nama_guru'] ?></td>
-                                <td class="text-center"><?= $value['tahun_angkatan']     ?></td>
+                                <td class="text-center"><?= $value['tahun_angkatan'] ?></td>
                                 <td class="text-center">
-                                    <p class="label bg-green">0</p>
+                                    <p class="label text-center bg-green"><?= $jml ?></p>
                                     <br>
-                                    <a href="<?= base_url('fakultas/rincian_fakultas/' .$value['id_fakultas']) ?>">Siswa</a> 
-                               </td>
+                                    <a href="<?= base_url('fakultas/detail_fakultas/'. $value['id_fakultas']) ?>">Siswa</a>
+                                </td>
                                 <td class="text-center">
                                     <button class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_fakultas'] ?>"><i class="fa fa-trash"></i></button>
                                 </td>
@@ -74,7 +80,7 @@
             </div>
             <!-- /.box-body -->
         </div>
-        <!-- /.box -->
+          <!-- /.box -->
     </div>
 </div>
 
@@ -97,16 +103,16 @@
 
                 <div class="form-group">
                     <label>Fakultas</label>
-                    <input name="fakultas" class="form-control" placeholder="fakultas" required>
+                    <input name="fakultas" class="form-control" placeholder="Fakultas" required>
                 </div>
 
                 <div class="form-group">
                     <label>Jurusan</label>
                     <select name="id_jurusan" class="form-control">
                         <option value="">--Pilih Jurusan--</option>
-                      <?php foreach ($jurusan as $key => $value) { ?>
-                         <option value="<?= $value['id_jurusan'] ?>"><?= $value['jurusan'] ?></option>   
-                   <?php }  ?>
+                        <?php foreach ($jurusan as $key => $value) { ?>
+                            <option value="<?= $value['id_jurusan'] ?>"><?= $value['kode_jurusan'] ?></option>   
+                        <?php }  ?>
                     </select>  
                 </div>
 
@@ -114,6 +120,9 @@
                     <label>Guru PA</label>
                     <select name="id_guru" class="form-control">
                         <option value="">--Pilih Guru PA--</option>
+                        <?php foreach ($guru as $key => $value) { ?>
+                            <option value="<?= $value['id_guru'] ?>"><?= $value['nama_guru'] ?></option>   
+                        <?php }  ?>
                     </select>  
                 </div>
 
@@ -121,9 +130,9 @@
                     <label>Tahun Angkatan</label>
                     <select name="tahun_angkatan" class="form-control">
                         <option value="">--Pilih Tahun--</option>
-                        <?php for ($i = date('Y'); $i >= date('Y')-10; $i--) { ?>
+                        <?php for ($i = date('Y'); $i >= date('Y')-6; $i--) { ?>
                             <option value="<?= $i ?>"><?= $i ?></option>
-                       <?php } ?>
+                        <?php } ?>
                     </select>  
                 </div>
 
@@ -154,7 +163,7 @@
 
             <div class="modal-body">
 
-                Apakah anda yakin ingin menghapus <b><?= $value['fakultas'] ?> .?</b>
+                Apakah anda yakin ingin menghapus Golongan <b><?= $value['fakultas'] ?>  ?</b>
 
             </div>
             <div class="modal-footer">
