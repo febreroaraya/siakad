@@ -98,9 +98,32 @@ class Fakultas extends BaseController
             'fakultas' => $this->Mdl_fakultas->detail($id_fakultas),
             'siswa' => $this->Mdl_fakultas->siswa($id_fakultas),
             'jml'   => $this->Mdl_fakultas->jmlsiswa($id_fakultas),
+            'golongan_siswa'   => $this->Mdl_fakultas->golongan_siswa(),
             'isi'   => 'admin/fakultas/v_detailfakultas'
         ];
         return view('layout/v_wrapper', $data);
+    }
+
+    public function add_siswa($id_siswa, $id_fakultas)
+    {
+        $data = [
+            'id_siswa' => $id_siswa,
+            'id_fakultas' => $id_fakultas
+        ];
+        $this->Mdl_fakultas->update_siswa($data);
+        session()->setFlashdata('pesan', 'Siswa berhasil ditambah ke Golongan');
+        return redirect()->to(base_url('fakultas/detail_fakultas/'. $id_fakultas));
+    }
+
+    public function delete_siswa($id_siswa, $id_fakultas)
+    {
+        $data = [
+            'id_siswa' => $id_siswa,
+            'id_fakultas' => null
+        ];
+        $this->Mdl_fakultas->update_siswa($data);
+        session()->setFlashdata('pesan', 'Siswa berhasil dihapus dari Golongan');
+        return redirect()->to(base_url('fakultas/detail_fakultas/'. $id_fakultas));
     }
 }
 

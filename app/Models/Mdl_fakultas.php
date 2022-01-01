@@ -20,7 +20,7 @@ class Mdl_fakultas extends Model
         return $this->db->table('tb_fakultas')
             ->join('tb_jurusan', 'tb_jurusan.id_jurusan = tb_fakultas.id_jurusan', 'left')
             ->join('tbl_guru', 'tbl_guru.id_guru = tb_fakultas.id_guru', 'left')
-            ->orderBy('tb_fakultas.id_fakultas', 'ASC')
+            ->where('id_fakultas', $id_fakultas)
             ->get()->getRowArray();
     }
 
@@ -45,10 +45,26 @@ class Mdl_fakultas extends Model
         ->get()->getResultArray();
     }
 
+    public function golongan_siswa()
+    {
+        return $this->db->table('tbl_siswa')
+        ->join('tb_jurusan', 'tb_jurusan.id_jurusan = tbl_siswa.id_jurusan', 'left')
+        ->where('id_fakultas', null)
+        ->orderBy('id_siswa', 'ASC')
+        ->get()->getResultArray();
+    }
+
     public function jmlsiswa($id_fakultas)
     {
         return $this->db->table('tbl_siswa')
         ->where('id_fakultas', $id_fakultas)
         ->countAllResults();
+    }
+
+    public function update_siswa($data)
+    {
+        $this->db->table('tbl_siswa')
+        ->where('id_siswa', $data['id_siswa'])
+        ->update($data);
     }
 }
