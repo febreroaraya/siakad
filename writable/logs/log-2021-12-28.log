@@ -6,3 +6,21 @@ CRITICAL - 2021-12-28 00:55:32 --> Too few arguments to function App\Models\Mdl_
 #4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
 #5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
 #6 {main}
+ERROR - 2021-12-28 11:00:22 --> Table 'db_siakad.tb_fakultas' doesn't exist
+CRITICAL - 2021-12-28 11:00:22 --> Call to a member function getResultArray() on bool
+#0 C:\xampp\htdocs\siakad\app\Controllers\Fakultas.php(23): App\Models\Mdl_fakultas->allData()
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Fakultas->index()
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Fakultas))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-12-28 11:00:28 --> Unknown column 'status' in 'where clause'
+CRITICAL - 2021-12-28 11:00:28 --> Call to a member function getRowArray() on bool
+#0 C:\xampp\htdocs\siakad\app\Controllers\JadwalPelajaran.php(25): App\Models\Mdl_Ta->ta_aktif()
+#1 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\JadwalPelajaran->index()
+#2 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 C:\xampp\htdocs\siakad\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 C:\xampp\htdocs\siakad\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('C:\\xampp\\htdocs...')
+#6 {main}

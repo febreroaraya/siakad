@@ -79,6 +79,7 @@ class Siswa extends BaseController
             $foto = $this->request->getFile('foto_siswa');
             //merename nama file foto
             $nama_file = $foto->getRandomName();
+            
             //jika valid
             $data = array(
                 'nis' => $this->request->getPost('nis'),
@@ -195,6 +196,11 @@ class Siswa extends BaseController
 
     public function delete($id_siswa)
     {
+        //menghapus foto lama
+        $siswa = $this->Mdl_Siswa->detailData($id_siswa);
+        if ($siswa['foto_siswa'] != "") {
+            unlink('fotosiswa/'. $siswa['foto_siswa']);
+        }
         $data = [
             'id_siswa' => $id_siswa,
         ];

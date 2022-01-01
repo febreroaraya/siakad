@@ -13,7 +13,7 @@ class Mdl_Guru extends Model
         ->get()->getResultArray();
     }
 
-    public function detailData($id_guru)
+    public function detail_Data($id_guru)
     {
         return $this->db->table('tbl_guru')
         ->where('id_guru', $id_guru)
