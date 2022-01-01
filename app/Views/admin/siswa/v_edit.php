@@ -54,9 +54,9 @@
                     <div class="form-group">
                          <label>Jurusan</label>
                          <select name="id_jurusan" class="form-control">
-                              <option value="<?= $siswa['id_jurusan'] ?>"><?= $siswa['jurusan'] ?>"</option>
+                              <option value="<?= $siswa['id_jurusan'] ?>"><?= $siswa['kode_jurusan'] ?>"</option>
                               <?php foreach ($jurusan as $key => $value) { ?>
-                                   <option value="<?= $value['id_jurusan'] ?>"><?= $value['jurusan'] ?></option>
+                                   <option value="<?= $value['id_jurusan'] ?>"><?= $value['kode_jurusan'] ?></option>
                               <?php } ?>
                          </select>
                     </div>

@@ -72,7 +72,7 @@
 
                     <div class="col-sm-6">
                         <div class="form-group">
-                             <img src="<?= base_url('fotoguru/default1.png') ?>" id="gambar_load" width="100px">
+                             <img src="<?= base_url('fotoguru/default.png') ?>" id="gambar_load" width="100px">
                         </div>
                     </div>
           

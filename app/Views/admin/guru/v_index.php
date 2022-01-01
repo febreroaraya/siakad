@@ -64,7 +64,7 @@
                                 <td class="text-center"><img src="<?= base_url('fotoguru/' . $value['foto_guru']) ?>" class="img-circle" width="60px" height="60px"></td>
                                 <td class="text-center">
                                     <a href="<?= base_url('guru/edit/' . $value['id_guru']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
-                                    <a href="<?= base_url('guru/delete/' . $value['id_guru']) ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i></a>
+                                    <a class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_guru'] ?>"><i class="fa fa-trash"></i></a>
                                 </td>
                             </tr>
                         <?php } ?>
@@ -76,3 +76,28 @@
         <!-- /.box -->
     </div>
 </div>
+
+<!-- Modal Delete -->
+<?php foreach ($guru as $key => $value) { ?>
+<div class="modal fade" id="delete<?= $value['id_guru'] ?>">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Hapus <?= $title ?></h4>
+            </div>
+            <div class="modal-body">
+                Apakah anda yakin ingin menghapus <b><?= $value['nama_guru'] ?> ?</b>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                <a href="<?= base_url('guru/delete/'. $value['id_guru']) ?>" class="btn btn-primary btn-flat">Hapus</a>
+            </div>
+        </div>
+    <!-- /.modal-content -->
+    </div>
+<!-- /.modal-dialog -->
+</div>
+<?php } ?>

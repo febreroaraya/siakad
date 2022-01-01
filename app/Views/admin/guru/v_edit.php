@@ -22,13 +22,12 @@
                <div class="box-body">
                
                <?php
-
                 if (session()->getFlashdata('pesan')) {
                     echo '<div class="alert alert-success" role="alert">';
                     echo session()->getFlashdata('pesan');
                     echo '</div>';
                 }
-                ?>
+               ?>
 
                <?php
                 $errors = session()->getFlashdata('errors');
@@ -49,7 +48,7 @@
                     <div class="col-sm-6">
                         <div class="form-group">
                             <label>Kode Guru</label>
-                            <input name="kode_guru" value="<?= $guru['id_guru'] ?>" class="form-control" placeholder="Kode Guru">
+                            <input name="kode_guru" value="<?= $guru['kode_guru'] ?>" class="form-control" placeholder="Kode Guru">
                         </div>
                     </div>
           

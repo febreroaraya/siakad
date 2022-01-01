@@ -47,7 +47,7 @@
                                <td><?= $no++ ?></td>
                                <td class="text-center"><?= $value['nis'] ?></td>
                                <td><?= $value['nama_siswa'] ?></td>
-                               <td class="text-center"><?= $value['jurusan'] ?></td>
+                               <td class="text-center"><?= $value['kode_jurusan'] ?></td>
                                <td><?= $value['password'] ?></td>
                                <td class="text-center"><img src="<?= base_url('fotosiswa/' . $value['foto_siswa']) ?>" class="img-circle" width="60px" height="60px"></td>
                                <td class="text-center">

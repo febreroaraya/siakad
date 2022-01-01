@@ -9,14 +9,14 @@ class Guru extends BaseController
     public function __construct()
     {
         helper('form');
-        $this->Mdl_Guru = new Mdl_Guru();
+        $this->Mdl_guru = new Mdl_Guru();
     }
 
     public function index()
     {
         $data = [
             'title' => 'Guru',
-            'guru'  => $this->Mdl_Guru->allData(),
+            'guru'  => $this->Mdl_guru->allData(),
             'isi'   => 'admin/guru/v_index'
         ]; 
         return view('layout/v_wrapper', $data);
@@ -26,7 +26,7 @@ class Guru extends BaseController
     {
         $data = [
             'title' => 'Tambah Guru',
-            'guru' => $this->Mdl_Guru->allData(),
+            'guru' => $this->Mdl_guru->allData(),
             'isi'   => 'admin/guru/v_add'
         ];
         return view('layout/v_wrapper', $data);
@@ -87,13 +87,13 @@ class Guru extends BaseController
         );
         //memindahkan file foto dari form input ke folder foto di directory
         $foto->move('fotoguru', $nama_file);
-        $this->Mdl_Guru->add($data);
+        $this->Mdl_guru->add($data);
         session()->setFlashdata('pesan', 'Data Berhasil Ditambahkan !!');
         return redirect()->to(base_url('guru'));
     } else {
         //jika tidak valid 
         session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-        return redirect()->to(base_url('guru'));
+        return redirect()->to(base_url('guru/add'));
     }
         
     }
@@ -102,7 +102,7 @@ class Guru extends BaseController
     {
         $data = [
             'title' => 'Edit Guru',
-            'guru' => $this->Mdl_Guru->detailData($id_guru),
+            'guru' => $this->Mdl_guru->detail_Data($id_guru),
             'isi'   => 'admin/guru/v_edit'
         ];
         return view('layout/v_wrapper', $data);
@@ -141,7 +141,7 @@ class Guru extends BaseController
             ],
             'foto_guru'  => [
                 'label' => 'Foto Guru',
-                'rules' => 'max_size[foto,1024]|mime_in[foto,image/png,image/jpeg,image/jpg,image/gif,image/ico]',
+                'rules' => 'max_size[foto_guru,1024]|mime_in[foto_guru,image/png,image/jpeg,image/jpg,image/gif,image/ico]',
                 'errors'    =>  [
                     'max_size'  => '{field} Max 1024 KB!',
                     'mime_in'  => 'Format {field} Wajib PNG, JPG, JPEG, GIF, ICO!'
@@ -149,25 +149,24 @@ class Guru extends BaseController
             ],
         ])) {
             //mengambil file foto dari form input
-            $foto_guru = $this->request->getFile('foto_guru');
-            if ($foto_guru->getError() == 4) {
+            $foto = $this->request->getFile('foto_guru');
+            if ($foto->getError() == 4) {
                 $data = array(
                     'id_guru' => $id_guru,
                     'kode_guru' => $this->request->getPost('kode_guru'),
                     'nip' => $this->request->getPost('nip'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
                     'password' => $this->request->getPost('password'),
-                    'foto_guru' => $this->request->getPost('foto_guru'),
                 );
-                $this->Mdl_Guru->edit($data);
+                $this->Mdl_guru->edit($data);
             } else {
                 //menghapus foto lama
-                $guru = $this->Mdl_Guru->detailData($id_guru);
+                $guru = $this->Mdl_guru->detail_Data($id_guru);
                 if ($guru['foto_guru'] != "") {
-                    unlink('fotoguru/'. $foto_guru['foto_guru']);
+                    unlink('fotoguru/'. $guru['foto_guru']);
                 }
                 //merename nama file foto
-                $nama_file = $foto_guru->getRandomName();
+                $nama_file = $foto->getRandomName();
                 //jika valid
                 $data = array(
                     'id_guru' => $id_guru,
@@ -175,11 +174,11 @@ class Guru extends BaseController
                     'nip' => $this->request->getPost('nip'),
                     'nama_guru' => $this->request->getPost('nama_guru'),
                     'password' => $this->request->getPost('password'),
-                    'foto_guru' => $nama_file,
+                    'foto_guru' => $nama_file
                 );
                 //memindahkan file foto dari form input ke folder foto di directory
-                $foto_guru->move('foto_guru', $nama_file);
-                $this->Mdl_Guru->edit($data);
+                $foto->move('fotoguru', $nama_file);
+                $this->Mdl_guru->edit($data);
             }
             
             session()->setFlashdata('pesan', 'Data berhasil di Ganti');
@@ -187,21 +186,21 @@ class Guru extends BaseController
         } else {
             //jika tidak valid 
             session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
-            return redirect()->to(base_url('guru'));
+            return redirect()->to(base_url('guru/edit/'. $id_guru));
         }
     }
 
     public function delete($id_guru)
     {
         //menghapus foto lama
-        $guru = $this->Mdl_Guru->detailData($id_guru);
+        $guru = $this->Mdl_guru->detail_Data($id_guru);
         if ($guru['foto_guru'] != "") {
             unlink('fotoguru/'. $guru['foto_guru']);
         }
         $data = [
             'id_guru' => $id_guru,
         ];
-        $this->Mdl_Guru->delete_data($data);
+        $this->Mdl_guru->delete_data($data);
         session()->setFlashdata('pesan','Data berhasil dihapus!');
         return redirect()->to(base_url('guru'));
     }
