@@ -47,7 +47,7 @@
                                         <td><?= $value['ka_jurusan'] ?></td>
                                         <td class="text-center">
                                              <a href="<?= base_url('jurusan/edit/' . $value['id_jurusan']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
-                                             <a href="<?= base_url('jurusan/delete/' . $value['id_jurusan']) ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i></a>
+                                             <a class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_jurusan'] ?>"><i class="fa fa-trash"></i></a>
 
 
                                         </td>

@@ -19,7 +19,9 @@ class Filters extends BaseConfig
         'csrf'     => CSRF::class,
         'toolbar'  => DebugToolbar::class,
         'honeypot' => Honeypot::class,
-        'filterauth' => \App\Filters\FilterAuth::class,
+        'filteradmin' => \App\Filters\FilterAdmin::class,
+        'filterssw' => \App\Filters\FilterSsw::class,
+        'filterggr' => \App\Filters\FilterGgr::class,
     ];
 
     /**
@@ -30,16 +32,26 @@ class Filters extends BaseConfig
      */
     public $globals = [
         'before' => [
-            'filterauth' => ['except' => [
+            'filteradmin' => ['except' => [
                 'auth', 'auth/*',
                 'home', 'home/*',
                 '/'
-            ]]
+            ]],
+            'filterssw' => ['except' => [
+                'auth', 'auth/*',
+                'home', 'home/*',
+                '/'
+            ]],
+            'filterggr' => ['except' => [
+                'auth', 'auth/*',
+                'home', 'home/*',
+                '/'
+            ]],
             // 'honeypot',
             // 'csrf',
         ],
         'after' => [
-            'filterauth' => ['except' => [
+            'filteradmin' => ['except' => [
                 'admin', 'admin/*',
                 'home', 'home/*',
                 'kelas', 'kelas/*',
@@ -53,6 +65,17 @@ class Filters extends BaseConfig
                 'siswa', 'siswa/*',
                 'fakultas', 'fakultas/*',
                 'jadwalpelajaran', 'jadwalpelajaran/*',
+            ]],
+            'filterssw' => ['except' => [
+                'ssw', 'ssw/*',
+                'home', 'home/*',
+                'krs', 'krs/*',
+                '/',
+            ]],
+            'filterggr' => ['except' => [
+                'ggr', 'ggr/*',
+                'home', 'home/*',
+                '/',
             ]],
             'toolbar',
             // 'honeypot',

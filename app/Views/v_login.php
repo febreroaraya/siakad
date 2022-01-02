@@ -40,8 +40,8 @@
           <select name="level" class="form-control">
               <option value="">--Level--</option>
               <option value="1">Admin</option>
-              <option value="2">Guru</option>
-              <option value="3">Siswa</option>
+              <option value="2">Siswa</option>
+              <option value="3">Guru</option>
           </select>
       </div>
       <div class="form-group has-feedback">

@@ -2,8 +2,8 @@
 <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
   <ul class="nav navbar-nav">
     <?php if (session()->get('level') == 1) { ?>
+      <!--Menu Halaman Admin-->
       <li><a href="<?= base_url('admin') ?>">Dashboard </a></li>
-
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Master <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
@@ -35,8 +35,28 @@
           <li><a href="<?= base_url('ta/setting') ?>">Tahun Akademik</a></li>
         </ul>
       </li>
-
       <li><a href="#">About</a></li>
+    <?php } elseif (session()->get('level') == 2) { ?>
+      <!--Menu Halaman Siswa-->
+      <li><a href="<?= base_url('ssw') ?>">Dashboard </a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="<?= base_url('krs') ?>">Kartu Rencana Studi (KRS)</a></li>
+          <li><a href="<?= base_url('khs') ?>">Kartu Hasil Studi (KHS)</a></li>
+        </ul>
+      </li>
+
+    <?php } elseif (session()->get('level') == 3) { ?>
+      <!--Menu Halaman Guru-->
+      <li><a href="<?= base_url('ggr') ?>">Dashboard </a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li><a href="#">Menu 1</a></li>
+          <li><a href="#">Menu 2</a></li>
+        </ul>
+      </li>
     <?php } ?>
   </ul>
 </div>
@@ -51,23 +71,36 @@
       <li class="dropdown user user-menu">
         <!-- Menu Toggle Button -->
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-          <!-- The user image in the navbar-->
-          <img src="<?= base_url('foto/' . session()->get('foto')) ?>" class="user-image" alt="User Image">
+        <!-- The user image in the navbar-->
+          <?php if (session()->get('level') == 1) { ?>
+            <img src="<?= base_url('foto/' . session()->get('foto')) ?>" class="user-image" alt="User Image">
+          <?php } elseif (session()->get('level') == 2) { ?>
+            <img src="<?= base_url('fotosiswa/' . session()->get('foto')) ?>" class="user-image" alt="User Image">
+          <?php } else { ?>
+            <img src="<?= base_url('fotoguru/' . session()->get('foto')) ?>" class="user-image" alt="User Image">
+          <?php } ?>  
+
           <!-- hidden-xs hides the username on small devices so only the image appears. -->
           <span class="hidden-xs"><?= session()->get('nama') ?></span>
         </a>
         <ul class="dropdown-menu">
           <!-- The user image in the menu -->
           <li class="user-header">
-            <img src="<?= base_url('foto/' . session()->get('foto')) ?>" class="img-circle" alt="User Image">
+            <?php if (session()->get('level') == 1) { ?>
+              <img src="<?= base_url('foto/' . session()->get('foto')) ?>" class="img-circle" alt="User Image">
+            <?php } elseif (session()->get('level') == 2) { ?>
+              <img src="<?= base_url('fotosiswa/' . session()->get('foto')) ?>" class="img-circle" alt="User Image">
+            <?php } else { ?>
+              <img src="<?= base_url('fotoguru/' . session()->get('foto')) ?>" class="img-circle" alt="User Image">
+            <?php } ?>  
 
             <p>
               <?= session()->get('nama') ?> - <?php if (session()->get('level') == 1) {
                                                 echo 'Admin';
                                               } elseif (session()->get('level') == 2) {
-                                                echo 'Guru';
+                                                echo session()->get('username');
                                               } elseif (session()->get('level') == 3) {
-                                                echo 'Siswa';
+                                                echo 'Guru';
                                               } ?>
               <small><?= date('d M Y') ?></small>
             </p>

@@ -61,7 +61,7 @@
                         ?>
                             <tr>
                                 <td class="text-center"><?= $no++ ?></td>
-                                <td class="text-center"><b><?= $value['fakultas'] ?></td>
+                                <td class="text-center"><b><?= $value['fakultas'] ?> - <?= $value['tahun_angkatan'] ?></td>
                                 <td><?= $value['jurusan'] ?></td>
                                 <td><?= $value['nama_guru'] ?></td>
                                 <td class="text-center"><?= $value['tahun_angkatan'] ?></td>

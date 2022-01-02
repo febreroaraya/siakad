@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Waktu pembuatan: 01 Jan 2022 pada 19.39
+-- Waktu pembuatan: 02 Jan 2022 pada 17.08
 -- Versi server: 5.7.34
 -- Versi PHP: 7.4.21
 
@@ -72,7 +72,7 @@ CREATE TABLE `tbl_jadwal` (
   `id_jadwal` int(11) NOT NULL,
   `id_jurusan` int(2) DEFAULT NULL,
   `id_ta` int(4) DEFAULT NULL,
-  `id_kelas` int(2) DEFAULT NULL,
+  `id_fakultas` int(11) DEFAULT NULL,
   `id_mapel` int(11) DEFAULT NULL,
   `id_guru` int(11) DEFAULT NULL,
   `id_ruangan` int(2) DEFAULT NULL,
@@ -85,11 +85,12 @@ CREATE TABLE `tbl_jadwal` (
 -- Dumping data untuk tabel `tbl_jadwal`
 --
 
-INSERT INTO `tbl_jadwal` (`id_jadwal`, `id_jurusan`, `id_ta`, `id_kelas`, `id_mapel`, `id_guru`, `id_ruangan`, `hari`, `waktu`, `quota`) VALUES
-(1, 1, 1, 1, 1, 1, 3, 'senin', '08:00-10:00', 32),
-(2, 1, 1, 1, 1, 2, 4, 'senin', '10:00-12:00', 32),
-(3, 1, 1, 1, 1, 1, 4, 'senin', '10:00-12:00', 32),
-(4, 1, 1, 1, 1, 2, 3, 'senin', '08:00-10:00', 32);
+INSERT INTO `tbl_jadwal` (`id_jadwal`, `id_jurusan`, `id_ta`, `id_fakultas`, `id_mapel`, `id_guru`, `id_ruangan`, `hari`, `waktu`, `quota`) VALUES
+(5, 20, 1, 8, 45, 1, 11, 'Senin', '07:00-09:00', 30),
+(6, 20, 1, 8, 46, 2, 11, 'Senin', '09:30-11:00', 30),
+(7, 20, 1, 8, 47, 3, 11, 'Senin', '12:00-13:00', 30),
+(8, 20, 1, 8, 48, 16, 11, 'Senin', '13:00-15:00', 30),
+(9, 20, 1, 8, 53, 39, 11, 'Selasa', '07:00-09:00', 30);
 
 -- --------------------------------------------------------
 
@@ -108,15 +109,15 @@ CREATE TABLE `tbl_ruangan` (
 --
 
 INSERT INTO `tbl_ruangan` (`id_ruangan`, `id_gedung`, `ruangan`) VALUES
-(1, 1, 'A1'),
-(2, 1, 'A2'),
-(3, 1, 'A3'),
-(4, 2, 'B1'),
-(5, 2, 'B2'),
-(6, 2, 'B3'),
-(7, 3, 'C1'),
-(8, 3, 'C2'),
-(9, 3, 'C3');
+(11, 4, 'A1'),
+(12, 4, 'A2'),
+(13, 4, 'A3'),
+(14, 5, 'B1'),
+(15, 5, 'B2'),
+(16, 5, 'B3'),
+(17, 6, 'C1'),
+(18, 6, 'C2'),
+(19, 6, 'C3');
 
 -- --------------------------------------------------------
 
@@ -139,26 +140,16 @@ CREATE TABLE `tbl_siswa` (
 --
 
 INSERT INTO `tbl_siswa` (`id_siswa`, `id_fakultas`, `id_jurusan`, `nis`, `nama_siswa`, `password`, `foto_siswa`) VALUES
-(1, 1, 1, 'E41171991', 'Febrero Araya K', '1234', '1641021481_7595b2a782597ab2498c.png'),
-(5, 1, 1, 'E41172071', 'Anisa Nur Isfani', '1234', '1641035686_86c202b6129f82afa243.png'),
-(6, 1, 1, 'E41180087', 'Ahmad Dandi Irawan', '1234', '1641035722_3e10f1330bb6696a90ef.png'),
-(7, 1, 1, 'E41180577', 'Irfan Giovani', '1234', '1641035762_a91b54fec2ded4e01f86.png'),
-(8, 1, 1, 'E41180650', 'Ilham Robby Sanjaya', '1234', '1641035798_0e84c984ad6b783df245.png'),
-(9, 2, 2, 'E41171992', 'Yudi Iriyanto', '1234', '1641035881_34dc68de3c6f86cae322.png'),
-(10, 2, 2, 'E41180651', 'Yudistiono', '1234', '1641035919_1df7e0b95c67029831b7.png'),
-(11, 2, 2, 'E41172072', 'Fabryzal Adam Pramudya', '1234', '1641035949_23594e5a229dbb9be37d.png'),
-(12, 2, 2, 'E41180088', 'Bagus Duwi Prasetiyo', '1234', '1641035980_bc5986bc1f27728f87ae.png'),
-(13, 2, 2, 'E41180578', 'Rizki Widya Pratama', '1234', '1641036009_cf9e093fedb7c935938d.png'),
-(14, 3, 3, 'E41180652', 'Febiola Putri Yunita', '1234', '1641036038_d9537482c424e8a739cf.png'),
-(15, 3, 3, 'E41180653', 'Fauziyatur Rohmah', '1234', '1641036067_e45cb4b8e855a0b7fa89.png'),
-(16, 3, 3, 'E41180654', 'Muhammad Farhan Nur Pratama', '1234', '1641036101_f5cc437852eb2cee5d07.png'),
-(17, 3, 3, 'E41180655', 'Lambang Arinanda Hadi', '1234', '1641036127_1607f3a884f69014e993.png'),
-(18, 3, 3, 'E41180656', 'Ryan Chandra Budipratama', '1234', '1641036172_5342208503d760b3ad19.png'),
-(19, 7, 2, 'E41180127', 'Muhammad Fistan Salsa Bila', '1234', '1641046509_2d63fd4e2c036192f2f1.png'),
-(20, 7, 2, 'E41180137', 'Vidian Taurus Sandi', '1234', '1641046538_0e2f70dfd467c805344a.png'),
-(21, 7, 2, 'E41180163', 'Nafis Hibatullah Lestamanta', '1234', '1641046583_22438916323f76375afd.png'),
-(22, 7, 2, 'E41180167', 'Muhammad Nizarudin', '1234', '1641046617_6fdaa8ea3036856570bc.png'),
-(23, 7, 2, 'E41180169', 'Mochamad Nurullah', '1234', '1641046651_28a219ef92426a3bcbcd.png');
+(25, 8, 20, 'E41171991', 'Febrero Araya K', '1234', '1641113070_a3eebcc95f7e15caa789.png'),
+(26, 8, 20, 'E41171992', 'Anisa Nur Isfani', '1234', '1641113101_097ff38e2e02fdea9ce2.png'),
+(27, 9, 20, 'E41171993', 'Ahmad Dandi Irawan', '1234', '1641113123_64cb36823fc87634dbb0.png'),
+(28, 9, 20, 'E41171994', 'Irfan Giovani', '1234', '1641113154_0a788d2ed629612b59fe.png'),
+(29, 10, 20, 'E41171995', 'Ilham Robby Sanjaya', '1234', '1641113196_1f6560be26d095e9e97b.png'),
+(30, 11, 21, 'E41171996', 'Yudi Iriyanto', '1234', '1641113236_440111bb47fa1af022b8.png'),
+(31, 11, 21, 'E41171997', 'Yudistiono', '1234', '1641113258_4351bae861b79d27b4cb.png'),
+(32, 12, 21, 'E41171998', 'Fabryzal Adam Pramudya', '1234', '1641113291_478580ff569024ed0a5e.png'),
+(33, 12, 21, 'E41171999', 'Bagus Duwi Prasetiyo', '1234', '1641113329_d40ae612407578a9bf05.png'),
+(34, 13, 21, 'E41172000', 'Rizki Widya Pratama', '1234', '1641113385_ec28a0f5095ba3451f94.png');
 
 -- --------------------------------------------------------
 
@@ -179,10 +170,12 @@ CREATE TABLE `tb_fakultas` (
 --
 
 INSERT INTO `tb_fakultas` (`id_fakultas`, `id_jurusan`, `id_guru`, `fakultas`, `tahun_angkatan`) VALUES
-(1, 1, 1, 'A', 2020),
-(2, 1, 2, 'B', 2020),
-(3, 1, 3, 'C', 2020),
-(7, 2, 16, 'A', 2020);
+(8, 20, 1, 'A', 2021),
+(9, 20, 2, 'B', 2021),
+(10, 20, 22, 'C', 2021),
+(11, 21, 33, 'A', 2021),
+(12, 21, 34, 'B', 2021),
+(13, 21, 35, 'C', 2021);
 
 -- --------------------------------------------------------
 
@@ -200,9 +193,9 @@ CREATE TABLE `tb_gedung` (
 --
 
 INSERT INTO `tb_gedung` (`id_gedung`, `gedung`) VALUES
-(1, 'Gedung A'),
-(2, 'Gedung B'),
-(3, 'Gedung C');
+(4, 'Gedung A'),
+(5, 'Gedung B'),
+(6, 'Gedung C');
 
 -- --------------------------------------------------------
 
@@ -223,15 +216,15 @@ CREATE TABLE `tb_jurusan` (
 --
 
 INSERT INTO `tb_jurusan` (`id_jurusan`, `id_kelas`, `ka_jurusan`, `kode_jurusan`, `jurusan`) VALUES
-(10, 1, 'Imam Budi, S.Pd', 'IPA-10', 'Ilmu Pengetahuan Alam'),
-(12, 1, 'Tanto, S.Pd', 'IPS-10', 'Ilmu Pengetahuan Sosial'),
-(13, 1, 'Agus Ahmad, S.Pd', 'BHS-10', 'Bahasa'),
-(14, 2, 'Rohim, S.Pd', 'IPA-11', 'Ilmu Pengetahuan Alam'),
-(15, 2, 'Octavian Yudha Mahendra, S.Pd', 'IPS-11', 'Ilmu Pengetahuan Sosial'),
-(16, 2, 'Achmad Syadidul Fahim, S.Pd', 'BHS-11', 'Bahasa'),
-(17, 3, 'Dimas Wahyu Pratama, S.Pd', 'IPA-12', 'Ilmu Pengetahuan Alam'),
-(18, 3, 'Ryan Hartadi, S.Pd', 'IPS-12', 'Ilmu Pengetahuan Sosial'),
-(19, 3, 'Ady Nugraha Putra Ramadhan, S.Pd', 'BHS-12', 'Bahasa');
+(20, 4, 'Imam Budi, S.Pd', 'IPA-10', 'Ilmu Pengetahuan Alam'),
+(21, 4, 'Tanto, S.Pd', 'IPS-10', 'Ilmu Pengetahuan Sosial'),
+(22, 4, 'Agus Ahmad, S.Pd', 'BHS-10', 'Bahasa'),
+(23, 5, 'Rohim, S.Pd', 'IPA-11', 'Ilmu Pengetahuan Alam'),
+(24, 5, 'Octavian Yudha Mahendra, S.Pd', 'IPS-11', 'Ilmu Pengetahuan Sosial'),
+(25, 5, 'Achmad Syadidul Fahim, S.Pd', 'BHS-11', 'Bahasa'),
+(26, 6, 'Dimas Wahyu Pratama, S.Pd', 'IPA-12', 'Ilmu Pengetahuan Alam'),
+(27, 6, 'Ryan Hartadi, S.Pd', 'IPS-12', 'Ilmu Pengetahuan Sosial'),
+(28, 6, 'Ady Nugraha Putra Ramadhan, S.Pd', 'BHS-12', 'Bahasa');
 
 -- --------------------------------------------------------
 
@@ -249,9 +242,9 @@ CREATE TABLE `tb_kelas` (
 --
 
 INSERT INTO `tb_kelas` (`id_kelas`, `kelas`) VALUES
-(1, 'Kelas 10'),
-(2, 'Kelas 11'),
-(3, 'Kelas 12');
+(4, 'Kelas 10'),
+(5, 'Kelas 11'),
+(6, 'Kelas 12');
 
 -- --------------------------------------------------------
 
@@ -273,40 +266,19 @@ CREATE TABLE `tb_mapel` (
 --
 
 INSERT INTO `tb_mapel` (`id_mapel`, `id_jurusan`, `kode_mapel`, `mapel`, `kategori`, `semester`) VALUES
-(11, 10, 'IPA10-01', 'MATEMATIKA', 'Wajib', 'Ganjil'),
-(12, 10, 'IPA10-02', 'KIMIA', 'Wajib', 'Ganjil'),
-(13, 10, 'IPA10-03', 'FISIKA', 'Wajib', 'Ganjil'),
-(14, 10, 'IPA10-04', 'Bahasa Indonesia', 'Wajib', 'Ganjil'),
-(15, 10, 'IPA10-05', 'Bahasa Inggris', 'Wajib', 'Ganjil'),
-(16, 10, 'IPA10-06', 'Pendidikan Kewarganegaraan', 'Wajib', 'Ganjil'),
-(17, 10, 'IPA10-07', 'BIOLOGI', 'Wajib', 'Ganjil'),
-(18, 10, 'IPA10-08', 'AGAMA', 'Wajib', 'Ganjil'),
-(19, 10, 'IPA10-09', 'OLAHRAGA', 'Wajib', 'Ganjil'),
-(20, 10, 'IPA10-10', 'Sejarah Indonesia', 'Wajib', 'Ganjil'),
-(21, 10, 'IPA10-11', 'Seni Musik & Rupa', 'Wajib', 'Ganjil'),
-(22, 12, 'IPS10-01', 'AGAMA', 'Wajib', 'Ganjil'),
-(23, 12, 'IPS10-02', 'Pendidikan Kewarganegaraan', 'Wajib', 'Ganjil'),
-(24, 12, 'IPS10-03', 'Bahasa Indonesia', 'Wajib', 'Ganjil'),
-(25, 12, 'IPS10-04', 'Bahasa Inggris', 'Wajib', 'Ganjil'),
-(26, 12, 'IPS10-05', 'MATEMATIKA', 'Wajib', 'Ganjil'),
-(27, 12, 'IPS10-06', 'Sejarah Indonesia', 'Wajib', 'Ganjil'),
-(28, 12, 'IPS10-07', 'Seni Musik & Rupa', 'Wajib', 'Ganjil'),
-(29, 12, 'IPS10-08', 'OLAHRAGA', 'Wajib', 'Ganjil'),
-(30, 12, 'IPS10-09', 'Sejarah', 'Wajib', 'Ganjil'),
-(31, 12, 'IPS10-10', 'GEOGRAFI', 'Wajib', 'Ganjil'),
-(32, 12, 'IPS10-11', 'SOSIOLOGI', 'Wajib', 'Ganjil'),
-(33, 12, 'IPS10-12', 'EKONOMI', 'Wajib', 'Ganjil'),
-(34, 14, 'IPA11-01', 'MATEMATIKA', 'Wajib', 'Ganjil'),
-(35, 14, 'IPA11-02', 'KIMIA', 'Wajib', 'Ganjil'),
-(36, 14, 'IPA11-03', 'AGAMA', 'Wajib', 'Ganjil'),
-(37, 14, 'IPA11-04', 'FISIKA', 'Wajib', 'Ganjil'),
-(38, 14, 'IPA11-05', 'BIOLOGI', 'Wajib', 'Ganjil'),
-(39, 14, 'IPA11-06', 'Bahasa Indonesia', 'Wajib', 'Ganjil'),
-(40, 14, 'IPA11-07', 'Bahasa Inggris', 'Wajib', 'Ganjil'),
-(41, 14, 'IPA11-08', 'Pendidikan Kewarganegaraan', 'Wajib', 'Ganjil'),
-(42, 14, 'IPA11-09', 'Sejarah Indonesia', 'Wajib', 'Ganjil'),
-(43, 14, 'IPA11-10', 'OLAHRAGA', 'Wajib', 'Ganjil'),
-(44, 14, 'IPA11-11', 'Seni Musik & Rupa', 'Wajib', 'Ganjil');
+(45, 20, 'IPA10-01', 'MATEMATIKA', 'Wajib', 'Ganjil'),
+(46, 20, 'IPA10-02', 'KIMIA', 'Wajib', 'Ganjil'),
+(47, 20, 'IPA10-03', 'BIOLOGI', 'Wajib', 'Ganjil'),
+(48, 20, 'IPA10-04', 'FISIKA', 'Wajib', 'Ganjil'),
+(49, 21, 'IPS10-01', 'SOSIOLOGI', 'Wajib', 'Ganjil'),
+(50, 21, 'IPS10-02', 'GEOGRAFI', 'Wajib', 'Ganjil'),
+(51, 21, 'IPS10-03', 'EKONOMI', 'Wajib', 'Ganjil'),
+(52, 21, 'IPS10-04', 'Sejarah', 'Wajib', 'Ganjil'),
+(53, 20, 'IPA10-05', 'AGAMA', 'Wajib', 'Ganjil'),
+(54, 20, 'IPA10-06', 'Sejarah Indonesia', 'Wajib', 'Ganjil'),
+(55, 20, 'IPA10-07', 'Olahraga', 'Wajib', 'Ganjil'),
+(56, 20, 'IPA10-08', 'Seni Musik & Rupa', 'Wajib', 'Ganjil'),
+(57, 20, 'IPA10-09', 'Kewirausahaan (KWU)', 'Wajib', 'Ganjil');
 
 -- --------------------------------------------------------
 
@@ -444,49 +416,49 @@ ALTER TABLE `tbl_guru`
 -- AUTO_INCREMENT untuk tabel `tbl_jadwal`
 --
 ALTER TABLE `tbl_jadwal`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_ruangan`
 --
 ALTER TABLE `tbl_ruangan`
-  MODIFY `id_ruangan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_ruangan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_siswa`
 --
 ALTER TABLE `tbl_siswa`
-  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id_siswa` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_fakultas`
 --
 ALTER TABLE `tb_fakultas`
-  MODIFY `id_fakultas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_fakultas` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_gedung`
 --
 ALTER TABLE `tb_gedung`
-  MODIFY `id_gedung` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_gedung` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_jurusan`
 --
 ALTER TABLE `tb_jurusan`
-  MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id_jurusan` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_kelas`
 --
 ALTER TABLE `tb_kelas`
-  MODIFY `id_kelas` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_kelas` int(2) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
-  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_ta`

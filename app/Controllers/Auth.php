@@ -52,7 +52,6 @@ class Auth extends BaseController
             if ($level == 1) {
                 $cek_user = $this->Mdl_auth->login_user($username, $password);
                 if ($cek_user) {
-                    session()->set('log', true);
                     session()->set('username', $cek_user['username']);
                     session()->set('nama', $cek_user['nama_user']);
                     session()->set('foto', $cek_user['foto']);
@@ -63,9 +62,29 @@ class Auth extends BaseController
                     return redirect()->to(base_url('auth/index')); 
                 }
             } elseif ($level == 2) {
-                echo 'Guru';
+                $cek_siswa = $this->Mdl_auth->login_siswa($username, $password);
+                if ($cek_siswa) {
+                    session()->set('username', $cek_siswa['nis']);
+                    session()->set('nama', $cek_siswa['nama_siswa']);
+                    session()->set('foto', $cek_siswa['foto_siswa']);
+                    session()->set('level', $level);
+                    return redirect()->to(base_url('ssw'));
+                } else {
+                    session()->setFlashdata('pesan', 'Login Gagal, Username atau Password Salah!!!');
+                    return redirect()->to(base_url('auth/index')); 
+                }
             } elseif ($level == 3) {
-                echo 'Siswa';
+                $cek_guru = $this->Mdl_auth->login_guru($username, $password);
+                if ($cek_guru) {
+                    session()->set('username', $cek_guru['nip']);
+                    session()->set('nama', $cek_guru['nama_guru']);
+                    session()->set('foto', $cek_guru['foto_guru']);
+                    session()->set('level', $level);
+                    return redirect()->to(base_url('ggr'));
+                } else {
+                    session()->setFlashdata('pesan', 'Login Gagal, Username atau Password Salah!!!');
+                    return redirect()->to(base_url('auth/index')); 
+                }
             }
 
         } else {

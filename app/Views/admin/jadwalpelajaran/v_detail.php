@@ -1,6 +1,7 @@
 <section class="content-header">
      <h1>
           <a href="<?= base_url('jadwalpelajaran') ?>"><?= $title ?></a>
+          <small><?= $jurusan['jurusan'] ?></small>
      </h1>
      <br>
 </section>
@@ -19,12 +20,12 @@
                <div class="box-body">
                     <table class="table table-bordered">
                          <tr>
-                              <th>kode Jurusan</th>
+                              <th>Kode Jurusan</th>
                               <th>: </th>
                               <th><?= $jurusan['kode_jurusan'] ?></th>
                          </tr>
                          <tr>
-                              <th>jurusan</th>
+                              <th>Jurusan</th>
                               <th>: </th>
                               <th><?= $jurusan['jurusan'] ?></th>
                          </tr>
@@ -87,11 +88,11 @@
                                    <th class="text-center" width="50px">Semester</th>
                                    <th class="text-center">Kode Mapel</th>
                                    <th>Pelajaran</th>
-                                   <th class="text-center">Kelas</th>
+                                   <th class="text-center">Golongan</th>
                                    <th class="text-center">Guru</th>
                                    <th class="text-center">Hari</th>
                                    <th class="text-center">Waktu</th>
-                                   <th class="text-center">Ruangan</th>
+                                   <th class="text-center">Ruang</th>
                                    <th class="text-center">Quota</th>
                                    <th class="text-center" width="150px">Action</th>
                               </tr>
@@ -100,21 +101,19 @@
                               <?php $no = 1;
                               foreach ($jadwal as $key => $value) { ?>
                                    <tr>
-                                        <td class="text-center"><?= $no++ ?></td>
+                                        <td><?= $no++ ?></td>
                                         <td class="text-center"><?= $value['semester'] ?></td>
                                         <td class="text-center"><?= $value['kode_mapel'] ?></td>
                                         <td><?= $value['mapel'] ?></td>
-                                        <td class="text-center"><?= $jurusan['kelas'] ?></td>
+                                        <td class="text-center"><?= $value['fakultas'] ?> - <?= $value['tahun_angkatan'] ?></td>
                                         <td><?= $value['nama_guru'] ?></td>
                                         <td class="text-center"><?= $value['hari'] ?></td>
                                         <td class="text-center"><?= $value['waktu'] ?></td>
                                         <td class="text-center"><?= $value['ruangan'] ?></td>
                                         <td class="text-center"><?= $value['quota'] ?></td>
-                                        <td class="text-center">
-                                        <a class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_jadwal'] ?>" ><i class="fa fa-trash"></i></a>
-                                        </td>
+                                        <td class="text-center"></td>
                                    </tr>
-                              <?php } ?> 
+                              <?php } ?>
                          </tbody>
                     </table>
                </div>
@@ -127,133 +126,105 @@
 </div>
 
 
-
 <!-- Modal Add -->
 <div class="modal fade" id="add">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-                <h4 class="modal-title">Tambah <?= $title ?></h4>
-            </div>
-            <div class="modal-body">
-                <?php
+     <div class="modal-dialog">
+          <div class="modal-content">
+               <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title">Tambah <?= $title ?></h4>
+               </div>
+
+               <div class="modal-body">
+                    <?php
                     echo form_open('jadwalpelajaran/add/'. $jurusan['id_jurusan']);
-                ?>
-                <div class="form-group">
+                    ?>
+
+                    <div class="form-group">
                     <label>Mata Pelajaran</label>
                     <select name="id_mapel" class="form-control">
                          <option value="">--Pilih Mata Pelajaran--</option>
-                         <?php  foreach ($mapel as $key => $value) { ?>
-                              <option value="<?= $value['id_mapel'] ?>"><?= $value['semester'] ?> | <?= $value['mapel'] ?> | <?= $value['kode_mapel'] ?></option>
+                         <?php foreach ($mapel as $key => $value) { ?>
+                              <option value="<?= $value['id_mapel'] ?>"><?= $value['semester'] ?> | <?= $value['kode_mapel'] ?> | <?= $value['mapel'] ?></option>
                          <?php } ?>
                     </select>
-                </div>
-
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
                     <label>Guru</label>
                     <select name="id_guru" class="form-control">
                          <option value="">--Pilih Guru--</option>
-                         
+                         <?php foreach ($guru as $key => $value) { ?>
+                              <option value="<?= $value['id_guru'] ?>"><?= $value['nama_guru'] ?></option>
+                         <?php } ?>
+                    </select>
+                    </div>
+                    <div class="form-group">
+                    <label>Golongan</label>
+                    <select name="id_fakultas" class="form-control">
+                         <option value="">--Pilih Fakultas--</option>
+                         <?php foreach ($golongan as $key => $value) { ?>
+                              <option value="<?= $value['id_fakultas'] ?>"><?= $value['fakultas'] ?> | <?= $value['tahun_angkatan'] ?></option>
+                         <?php } ?>
+                    </select>
+                    </div>
+                    <div class="row">
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label>Hari</label>
+                                   <select name="hari" class="form-control">
+                                        <option value="">--Pilih Hari--</option>
+                                        <option value="Senin">Senin</option>
+                                        <option value="Selasa">Selasa</option>
+                                        <option value="Rabu">Rabu</option>
+                                        <option value="Kamis">Kamis</option>
+                                        <option value="Jumat">Jumat</option>
+                                        <option value="Sabtu">Sabtu</option>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label>Waktu</label>
+                                   <input name="waktu" placeholder="Ex = 07:00-09:00" class="form-control" required>
+                              </div>
+                         </div>
+                    </div>
 
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Kelas</label>
-                    <select name="kelas" class="form-control">
-                         <option value="">--Pilih Kelas--</option>
-                         <?php foreach ($kelas as $key => $value) { ?>
-                               <option value="<?= $value['id_kelas'] ?>"><?= $value['kelas'] ?>     </option>
-                         <?php } ?> 
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label>Semester</label>
-                    <select name="semester" class="form-control">
-                         <option value="">--Pilih Semester--</option>
-                         <option value="Ganjil">Ganjil</option>
-                         <option value="Genap">Genap</option>
-                    </select>
-                </div>
-
-                    <div class="row"> 
-                          <div class="col-sm-6">
-                          <label>Hari</label>
-                         <select name="semester" class="form-control">
-                              <option value="">--Pilih Hari--</option>
-                              <option value="Senin">Senin</option>
-                              <option value="Selasa">Selasa</option>
-                              <option value="Rabu">Rabu</option>
-                              <option value="Kamis">Kamis</option>
-                              <option value="Jumat">Jumat</option>
-                              <option value="Sabtu">Sabtu</option>
-                          </select>
-                        </div>
-                     <div class="col-sm-6">
-                        <div class="form-group">  
-                             <label>Waktu</label>
-                             <input name="waktu" class="form-control" placeholder="Ex= 00:00-10:30"> 
-                        </div>
-                  </div>       
-               </div>
-                              
-               <div class="row"> 
-                          <div class="col-sm-6">
-                          <label>Ruangan</label>
-                         <select name="id_ruangan" class="form-control">
-                              <option value="">--Pilih Ruang--</option>
-                              <?php foreach ($ruangan as $key => $value) { ?>
-                                   <option value="<?= $value['id_ruangan'] ?>"><?= $value['ruangan'] ?></option>
-                             <?php } ?>
-                          </select>
-                        </div>
-                     <div class="col-sm-6">
-                        <div class="form-group">  
-                             <label>Quota</label>
-                             <input name="quota" class="form-control" placeholder="Quota"> 
-                        </div>
-                  </div>       
+                    <div class="row">
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label>Ruangan</label>
+                                   <select name="id_ruangan" class="form-control">
+                                        <option value="">--Pilih Ruangan--</option>
+                                        <?php foreach ($ruangan as $key => $value) { ?>
+                                             <option value="<?= $value['id_ruangan'] ?>"><?= $value['ruangan'] ?></option>
+                                        <?php } ?>
+                                   </select>
+                              </div>
+                         </div>
+                         <div class="col-sm-6">
+                              <div class="form-group">
+                                   <label>Quota</label>
+                                   <input name="quota" placeholder="Quota" class="form-control" required>
+                              </div>
+                         </div>
+                    </div>
                </div>
 
-            </div>
-
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
-            </div>
-            <?php echo form_close() ?>
-        </div>
-    <!-- /.modal-content -->
-    </div>
+               <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                    <button type="submit" class="btn btn-primary btn-flat">Simpan</button>
+               </div>
+               <?php echo form_close() ?>
+          </div>
+     <!-- /.modal-content -->
+     </div>
 <!-- /.modal-dialog -->
 </div>
 
 
-<!-- Modal Delete -->
-<?php foreach ($jadwal as $key => $value) { ?>
-     <div class="modal fade" id="delete<?= $value['id_jadwal'] ?>">
-          <div class="modal-dialog">
-               <div class="modal-content">
-                    <div class="modal-header">
-                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                              <span aria-hidden="true">&times;</span>
-                         </button>
-                         <h4 class="modal-title">Hapus <?= $title ?></h4>
-                    </div>
-                    <div class="modal-body">
-                         Apakah anda yakin ingin menghapus <b><?= $value['kode_mapel'] ?> | <?= $value['nama_guru'] ?></b>
-                         
-                    </div>
-                    <div class="modal-footer">
-                         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
-                         <a href="<?= base_url('jadwalpelajaran/delete/' . $value['id_jadwal'] . '/' . $jurusan['id_jurusan']) ?>" class="btn btn-primary btn-flat">Hapus</a>
-                    </div>
-               </div>
-               <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-     </div>
-<?php } ?>
+
+
 

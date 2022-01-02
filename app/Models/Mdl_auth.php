@@ -12,4 +12,20 @@ class Mdl_auth extends Model
             'password' => $password
         ])->get()->getRowArray();
     }
+
+    public function login_siswa($username, $password)
+    {
+        return $this->db->table('tbl_siswa')->where([
+            'nis' => $username,
+            'password' => $password
+        ])->get()->getRowArray();
+    }
+
+    public function login_guru($username, $password)
+    {
+        return $this->db->table('tbl_guru')->where([
+            'nip' => $username,
+            'password' => $password
+        ])->get()->getRowArray();
+    }
 }

@@ -13,7 +13,7 @@ class Mdl_jadwalpelajaran extends Model
             ->join('tb_jurusan', 'tb_jurusan.id_jurusan = tbl_jadwal.id_jurusan', 'left')
             ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
             ->join('tbl_ruangan', 'tbl_ruangan.id_ruangan = tbl_jadwal.id_ruangan', 'left')
-            ->join('tb_kelas', 'tb_kelas.id_kelas = tbl_jadwal.id_kelas', 'left')
+            ->join('tb_fakultas', 'tb_fakultas.id_fakultas = tbl_jadwal.id_fakultas', 'left')
             ->where('tbl_jadwal.id_jurusan', $id_jurusan)
             ->orderBy('tb_mapel.semester', 'ASC')
             ->get()->getResultArray();
@@ -23,8 +23,17 @@ class Mdl_jadwalpelajaran extends Model
     {
         return $this->db->table('tb_mapel')
         ->where('id_jurusan', $id_jurusan)
+        ->orderBy('semester', 'ASC')
         ->get()->getResultArray();    
-    }  
+    }
+
+    public function golongan($id_jurusan)
+    {
+        return $this->db->table('tb_fakultas')
+        ->where('id_jurusan', $id_jurusan)
+        ->orderBy('fakultas', 'ASC')
+        ->get()->getResultArray();
+    }
     
     public function add($data)
     {

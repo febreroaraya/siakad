@@ -43,7 +43,7 @@
                                         <td><?= $value['ruangan'] ?></td>
                                         <td class="text-center">
                                              <a href="<?= base_url('ruangan/edit/' . $value['id_ruangan']) ?>" class="btn btn-warning btn-sm btn-flat"><i class="fa fa-pencil"></i></a>
-                                             <a href="<?= base_url('ruangan/delete/' . $value['id_ruangan']) ?>" class="btn btn-danger btn-sm btn-flat"><i class="fa fa-trash"></i></a>
+                                             <a class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_ruangan'] ?>"><i class="fa fa-trash"></i></a>
 
 
                                         </td>

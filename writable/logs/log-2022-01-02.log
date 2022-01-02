@@ -1,0 +1,431 @@
+CRITICAL - 2022-01-02 02:07:21 --> Undefined array key "nim"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/ssw/krs/v_krs.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 21)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('ssw/krs/v_krs', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('ssw/krs/v_krs')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(23): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 02:21:39 --> Undefined array key "fakultas"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/ssw/krs/v_krs.php(46): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 46)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('ssw/krs/v_krs', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('ssw/krs/v_krs')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(23): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+ERROR - 2022-01-02 04:22:18 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:18 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:44 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:44 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:45 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:45 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:57 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:57 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:57 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:57 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:58 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:58 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:58 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:58 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:58 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:58 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:58 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:58 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 04:22:58 --> Unknown column 'tbl_jadwal.id_fakultas' in 'on clause'
+CRITICAL - 2022-01-02 04:22:58 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(21): App\Models\Mdl_krs->MataPelajaran()
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-02 04:36:55 --> Undefined array key "ruangan"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/ssw/krs/v_krs.php(114): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 114)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('ssw/krs/v_krs', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('ssw/krs/v_krs')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(24): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 04:38:29 --> Undefined array key "nama_guru"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/ssw/krs/v_krs.php(115): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 115)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('ssw/krs/v_krs', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('ssw/krs/v_krs')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Krs.php(24): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Krs->index()
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Krs))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 06:28:22 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(45): CodeIgniter\Model->__call('detailData', Array)
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#8 {main}
+ERROR - 2022-01-02 06:29:12 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 06:29:12 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('20')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 06:30:04 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 06:30:04 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('20')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 06:32:10 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 06:32:10 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('20')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 06:32:13 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 06:32:13 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('21')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('21')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 06:36:17 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 06:36:17 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('20')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 07:59:28 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 07:59:28 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('20')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 07:59:34 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 07:59:34 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('21')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('21')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+ERROR - 2022-01-02 07:59:37 --> Unknown column 'tbl_jadwal.id_kelas' in 'on clause'
+CRITICAL - 2022-01-02 07:59:37 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(46): App\Models\Mdl_jadwalpelajaran->all_Data('22')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('22')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-02 08:01:24 --> You must set the database table to be used with your query.
+#0 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Model.php(717): CodeIgniter\Model->builder()
+#2 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(45): CodeIgniter\Model->__call('detailData', Array)
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#4 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#8 {main}
+CRITICAL - 2022-01-02 08:03:17 --> Undefined variable $mapel
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 132)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(52): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 08:03:57 --> Undefined variable $mapel
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(132): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 132)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(52): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 08:48:23 --> Undefined array key "ruangan"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(112): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 112)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(53): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 10:14:41 --> Undefined variable $fakultas
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 167)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(53): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 10:17:45 --> Undefined variable $fakultas
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(167): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', '/Applications/M...', 167)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(53): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 10:18:37 --> Undefined array key "kode_jurusan"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 168)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(53): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 10:23:03 --> Undefined array key "kode_jurusan"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 168)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(53): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+CRITICAL - 2022-01-02 10:23:16 --> Undefined array key "jurusan"
+#0 /Applications/MAMP/htdocs/siakad/app/Views/admin/jadwalpelajaran/v_detail.php(168): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 168)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('admin/jadwalpel...', Array, true)
+#4 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_content.php(4): view('admin/jadwalpel...')
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#6 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#7 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_conten...', Array, true)
+#8 /Applications/MAMP/htdocs/siakad/app/Views/layout/v_wrapper.php(6): view('layout/v_conten...')
+#9 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(214): include('/Applications/M...')
+#10 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/View/View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#11 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Common.php(1097): CodeIgniter\View\View->render('layout/v_wrappe...', Array, true)
+#12 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(53): view('layout/v_wrappe...', Array)
+#13 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#14 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#15 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#17 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#18 {main}
+ERROR - 2022-01-02 10:25:02 --> Column 'id_jurusan' in where clause is ambiguous
+CRITICAL - 2022-01-02 10:25:02 --> Call to a member function getResultArray() on bool
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Jadwalpelajaran.php(49): App\Models\Mdl_jadwalpelajaran->golongan('20')
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\JadwalPelajaran->detailjadwal('20')
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\JadwalPelajaran))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}

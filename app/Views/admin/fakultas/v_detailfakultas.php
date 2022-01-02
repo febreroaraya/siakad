@@ -1,6 +1,6 @@
 <section class="content-header">
     <h1>
-        <?= $title ?> :  <label class="text-primary"><?= $fakultas['fakultas'] ?></label>
+        <?= $title ?> :  <label class="text-primary"><?= $fakultas['fakultas'] ?> - <?= $fakultas['tahun_angkatan'] ?></label>
     </h1>
     <br>
 </section>
@@ -22,7 +22,7 @@
                         <tr>
                             <th width="150px">Golongan</th>
                             <th width="30px">:</th>
-                            <td width="200px"><?= $fakultas['fakultas'] ?></td>
+                            <td width="200px"><?= $fakultas['fakultas'] ?> - <?= $fakultas['tahun_angkatan'] ?></td>
                             <th width="150px">Angkatan</th>
                             <th width="30px">:</th>
                             <td><?= $fakultas['tahun_angkatan'] ?></td>
