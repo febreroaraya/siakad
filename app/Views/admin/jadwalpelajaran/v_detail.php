@@ -111,7 +111,9 @@
                                         <td class="text-center"><?= $value['waktu'] ?></td>
                                         <td class="text-center"><?= $value['ruangan'] ?></td>
                                         <td class="text-center"><?= $value['quota'] ?></td>
-                                        <td class="text-center"></td>
+                                        <td class="text-center">
+                                        <a class="btn btn-danger btn-sm btn-flat" data-toggle="modal" data-target="#delete<?= $value['id_jadwal'] ?>"><i class="fa fa-trash"></i></a>
+                                        </td>
                                    </tr>
                               <?php } ?>
                          </tbody>
@@ -187,7 +189,7 @@
                          <div class="col-sm-6">
                               <div class="form-group">
                                    <label>Waktu</label>
-                                   <input name="waktu" placeholder="Ex = 07:00-09:00" class="form-control" required>
+                                   <input name="waktu" placeholder="Ex = 07:00-09:00" class="form-control">
                               </div>
                          </div>
                     </div>
@@ -207,7 +209,7 @@
                          <div class="col-sm-6">
                               <div class="form-group">
                                    <label>Quota</label>
-                                   <input name="quota" placeholder="Quota" class="form-control" required>
+                                   <input name="quota" placeholder="Quota" class="form-control">
                               </div>
                          </div>
                     </div>
@@ -224,6 +226,31 @@
 <!-- /.modal-dialog -->
 </div>
 
+
+<!-- Modal Delete -->
+<?php foreach ($jadwal as $key => $value) { ?>
+     <div class="modal fade" id="delete<?= $value['id_jadwal'] ?>">
+          <div class="modal-dialog">
+               <div class="modal-content">
+                    <div class="modal-header">
+                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                         </button>
+                         <h4 class="modal-title">Hapus <?= $title ?></h4>
+                    </div>
+                    <div class="modal-body">
+                         Apakah anda yakin ingin menghapus <b><?= $value['kode_mapel'] ?> | <?= $value['nama_guru'] ?> ?</b>
+                    </div>
+                    <div class="modal-footer">
+                         <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                         <a href="<?= base_url('jadwalpelajaran/delete/' . $value['id_jadwal'] . '/' . $jurusan['id_jurusan']) ?>" class="btn btn-primary btn-flat">Hapus</a>
+                    </div>
+               </div>
+               <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+     </div>
+<?php } ?>
 
 
 

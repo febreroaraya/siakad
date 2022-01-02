@@ -108,7 +108,7 @@ class JadwalPelajaran extends BaseController
         ])) {
             //jika valid
             $ta = $this->Mdl_Ta->ta_aktif();
-           $data = [
+            $data = [
                'id_jurusan' => $id_jurusan,
                'id_ta' => $ta['id_ta'],
                'id_mapel' => $this->request->getPost('id_mapel'),
