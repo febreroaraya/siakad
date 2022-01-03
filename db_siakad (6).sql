@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Waktu pembuatan: 02 Jan 2022 pada 17.08
+-- Waktu pembuatan: 03 Jan 2022 pada 06.24
 -- Versi server: 5.7.34
 -- Versi PHP: 7.4.21
 
@@ -86,11 +86,9 @@ CREATE TABLE `tbl_jadwal` (
 --
 
 INSERT INTO `tbl_jadwal` (`id_jadwal`, `id_jurusan`, `id_ta`, `id_fakultas`, `id_mapel`, `id_guru`, `id_ruangan`, `hari`, `waktu`, `quota`) VALUES
-(5, 20, 1, 8, 45, 1, 11, 'Senin', '07:00-09:00', 30),
-(6, 20, 1, 8, 46, 2, 11, 'Senin', '09:30-11:00', 30),
-(7, 20, 1, 8, 47, 3, 11, 'Senin', '12:00-13:00', 30),
-(8, 20, 1, 8, 48, 16, 11, 'Senin', '13:00-15:00', 30),
-(9, 20, 1, 8, 53, 39, 11, 'Selasa', '07:00-09:00', 30);
+(11, 20, 1, 8, 45, 1, 11, 'Senin', '07:00-09:00', 30),
+(12, 20, 1, 8, 53, 2, 11, 'Senin', '09:30-11:00', 30),
+(13, 20, 1, 8, 54, 3, 11, 'Senin', '13:00-14:00', 30);
 
 -- --------------------------------------------------------
 
@@ -278,7 +276,8 @@ INSERT INTO `tb_mapel` (`id_mapel`, `id_jurusan`, `kode_mapel`, `mapel`, `katego
 (54, 20, 'IPA10-06', 'Sejarah Indonesia', 'Wajib', 'Ganjil'),
 (55, 20, 'IPA10-07', 'Olahraga', 'Wajib', 'Ganjil'),
 (56, 20, 'IPA10-08', 'Seni Musik & Rupa', 'Wajib', 'Ganjil'),
-(57, 20, 'IPA10-09', 'Kewirausahaan (KWU)', 'Wajib', 'Ganjil');
+(57, 20, 'IPA10-09', 'Kewirausahaan (KWU)', 'Wajib', 'Ganjil'),
+(58, 20, 'IPA10-10', 'MATEMATIKA', 'Wajib', 'Genap');
 
 -- --------------------------------------------------------
 
@@ -416,7 +415,7 @@ ALTER TABLE `tbl_guru`
 -- AUTO_INCREMENT untuk tabel `tbl_jadwal`
 --
 ALTER TABLE `tbl_jadwal`
-  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_ruangan`
@@ -458,7 +457,7 @@ ALTER TABLE `tb_kelas`
 -- AUTO_INCREMENT untuk tabel `tb_mapel`
 --
 ALTER TABLE `tb_mapel`
-  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=58;
+  MODIFY `id_mapel` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=59;
 
 --
 -- AUTO_INCREMENT untuk tabel `tb_ta`
