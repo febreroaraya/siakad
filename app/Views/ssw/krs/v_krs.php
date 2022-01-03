@@ -52,6 +52,13 @@
         <button class="btn btn-xs btn-flat btn-primary"><i class="fa fa-print"></i> Cetak KRS</button>
     </div>
     <div class="col-sm-12">
+        <?php 
+            if (session()->getFlashdata('pesan')) {
+            echo '<div class="alert alert-success" role="alert">';
+            echo session()->getFlashdata('pesan');
+            echo '</div>';
+            }
+        ?>
         <table class="table table-striped table-bordered table-responsive">
             <tr class="label-primary">
                 <th class="text-center">#</th>
@@ -62,17 +69,25 @@
                 <th class="text-center">Ruang</th>
                 <th class="text-center">Guru</th>
                 <th class="text-center">Waktu</th>
+                <th></th>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
+            <?php $no = 1;
+            foreach ($data_mapel as $key => $value) { ?>
+                <tr>
+                    <td class="text-center"><?= $no++ ?></td>
+                    <td class="text-center"><?= $value['kode_mapel'] ?></td>
+                    <td><?= $value['mapel'] ?></td>
+                    <td class="text-center"><?= $value['semester'] ?></td>
+                    <td class="text-center"><?= $value['fakultas'] ?></td>
+                    <td class="text-center"><?= $value['ruangan'] ?></td>
+                    <td><?= $value['nama_guru'] ?></td>
+                    <td class="text-center"><?= $value['hari'] ?>, <?= $value['waktu'] ?></td>
+                    <td class="text-center">
+                        <a href="" class="btn btn-danger btn-flat btn-xs"><i class="fa fa-trash"></i></a>
+                    </td>
+                </tr>
+            <?php } ?>
+            
         </table>
     </div>
 </div>
@@ -121,7 +136,7 @@
                                     <span class="label label-primary">0/<?= $value['quota'] ?></span>
                                 </td>
                                 <td class="text-center">
-                                    <button class="btn btn-success btn-flat btn-xs"><i class="fa fa-plus"></i></button>
+                                    <a href="<?= base_url('krs/tambah/'. $value['id_jadwal']) ?>" class="btn btn-success btn-flat btn-xs"><i class="fa fa-plus"></i></a>
                                 </td>
                             </tr>
                         <?php } ?>

@@ -26,4 +26,20 @@ class Mdl_krs extends Model
         ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
         ->get()->getResultArray();
     }
+
+    public function tambah_mapel($data)
+    {
+        $this->db->table('tbl_krs')->insert($data);
+    }
+
+    public function data_krs()
+    {
+        return $this->db->table('tbl_krs')
+        ->join('tbl_jadwal', 'tbl_jadwal.id_jadwal = tbl_krs.id_jadwal', 'left')
+        ->join('tb_mapel', 'tb_mapel.id_mapel = tbl_jadwal.id_mapel', 'left')
+        ->join('tb_fakultas', 'tb_fakultas.id_fakultas = tbl_jadwal.id_fakultas', 'left')
+        ->join('tbl_ruangan', 'tbl_ruangan.id_ruangan = tbl_jadwal.id_ruangan', 'left')
+        ->join('tbl_guru', 'tbl_guru.id_guru = tbl_jadwal.id_guru', 'left')
+        ->get()->getResultArray();
+    }
 }
