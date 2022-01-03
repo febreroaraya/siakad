@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Waktu pembuatan: 03 Jan 2022 pada 06.24
+-- Waktu pembuatan: 03 Jan 2022 pada 19.07
 -- Versi server: 5.7.34
 -- Versi PHP: 7.4.21
 
@@ -89,6 +89,28 @@ INSERT INTO `tbl_jadwal` (`id_jadwal`, `id_jurusan`, `id_ta`, `id_fakultas`, `id
 (11, 20, 1, 8, 45, 1, 11, 'Senin', '07:00-09:00', 30),
 (12, 20, 1, 8, 53, 2, 11, 'Senin', '09:30-11:00', 30),
 (13, 20, 1, 8, 54, 3, 11, 'Senin', '13:00-14:00', 30);
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `tbl_krs`
+--
+
+CREATE TABLE `tbl_krs` (
+  `id_krs` int(11) NOT NULL,
+  `id_siswa` int(11) DEFAULT NULL,
+  `id_jadwal` int(11) DEFAULT NULL,
+  `id_ta` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data untuk tabel `tbl_krs`
+--
+
+INSERT INTO `tbl_krs` (`id_krs`, `id_siswa`, `id_jadwal`, `id_ta`) VALUES
+(1, 25, 11, 1),
+(2, 25, 12, 1),
+(3, 25, 13, 1);
 
 -- --------------------------------------------------------
 
@@ -348,6 +370,12 @@ ALTER TABLE `tbl_jadwal`
   ADD PRIMARY KEY (`id_jadwal`);
 
 --
+-- Indeks untuk tabel `tbl_krs`
+--
+ALTER TABLE `tbl_krs`
+  ADD PRIMARY KEY (`id_krs`);
+
+--
 -- Indeks untuk tabel `tbl_ruangan`
 --
 ALTER TABLE `tbl_ruangan`
@@ -416,6 +444,12 @@ ALTER TABLE `tbl_guru`
 --
 ALTER TABLE `tbl_jadwal`
   MODIFY `id_jadwal` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT untuk tabel `tbl_krs`
+--
+ALTER TABLE `tbl_krs`
+  MODIFY `id_krs` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT untuk tabel `tbl_ruangan`
