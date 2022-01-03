@@ -149,7 +149,10 @@
                     <select name="id_mapel" class="form-control">
                          <option value="">--Pilih Mata Pelajaran--</option>
                          <?php foreach ($mapel as $key => $value) { ?>
-                              <option value="<?= $value['id_mapel'] ?>"><?= $value['semester'] ?> | <?= $value['kode_mapel'] ?> | <?= $value['mapel'] ?></option>
+                              <?php if ($value['semester'] == $ta_aktif['semester']) { ?>
+                                   <option value="<?= $value['id_mapel'] ?>"><?= $value['semester'] ?> | <?= $value['kode_mapel'] ?> | <?= $value['mapel'] ?></option>
+                              <?php } ?>
+                              
                          <?php } ?>
                     </select>
                     </div>
