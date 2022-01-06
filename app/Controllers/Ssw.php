@@ -61,8 +61,8 @@ class Ssw extends BaseController
 			'title' => 'Kartu Hasil Studi (KHS)',
 			'ta_aktif' => $this->Mdl_Ta->ta_aktif(),
 			'ssw' => $this->Mdl_krs->DataSiswa(),
-			'matapelajaran' => $this->Mdl_krs->MataPelajaran($ta ['$id_ta'], $ssw['id_jurusan']), 
-			'data_mapel'	=> $this->Mdl_krs->data_krs($ssw['id_siswa'], $ta ['$id_ta']),
+			//'matapelajaran' => $this->Mdl_krs->MataPelajaran($ta ['$id_ta'], $ssw['id_jurusan']), 
+			'data_mapel'	=> $this->Mdl_krs->data_krs($ssw['id_siswa'], $ta['id_ta']),
 
 		];
 		return view('ssw/v_print_khs', $data);

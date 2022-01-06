@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,22 +26,22 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
 </head>
 <body onload="window.print();">
-<div class="wrapper">
-  <!-- Main content -->
-  <section class="invoice">
-    <!-- title row -->
-    <div class="row">
-      <div class="col-xs-12">
-        <h2 class="page-header">
-          <i class="fa fa-file-o"></i> <b>Kartu Rencana Studi</b>
-          <small class="pull-right">Tanggal: <?= date('d M Y') ?></small>
-        </h2>
-      </div>
-      <!-- /.col -->
-    </div>
+    <div class="wrapper">
+        <!-- Main content -->
+        <section class="invoice">
+            <!-- title row -->
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2 class="page-header">
+                        <i class="fa fa-file-o"></i> <b>Kartu Rencana Studi</b>
+                        <small class="pull-right">Tanggal: <?= date('d M Y') ?></small>
+                    </h2>
+                </div>
+            <!-- /.col -->
+            </div>
     <!-- info row -->
     <div class="row invoice-info">
-	<table class="table-striped table-responsive">
+	      <table class="table-striped table-responsive">
             <tr>
                 <th rowspan="7"><img src="<?= base_url('fotosiswa/'. $ssw['foto_siswa']) ?>" height="160px" width="150px"></th>
                 <th width="150px">Tahun Akademik</th>
@@ -121,7 +120,6 @@
     <div class="row">
       <!-- accepted payments column -->
       <div class="col-xs-4">
-        <p class="lead">Payment Methods:</p>
         
       </div>
       <!-- /.col -->

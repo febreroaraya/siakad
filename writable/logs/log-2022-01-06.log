@@ -1,0 +1,232 @@
+CRITICAL - 2022-01-06 06:49:10 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 64)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:00:22 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 64)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:02:43 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(64): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 64)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:04:22 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:05:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:36 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:38 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:38 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:38 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:38 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:38 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:38 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:39 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:39 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:39 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:07:39 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:08:16 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:10:36 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:10:37 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:10:46 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:18:15 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:18:42 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:19:32 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
+CRITICAL - 2022-01-06 07:32:54 --> Undefined array key "$id_ta"
+#0 /Applications/MAMP/htdocs/siakad/app/Controllers/Ssw.php(65): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', '/Applications/M...', 65)
+#1 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(824): App\Controllers\Ssw->print_khs()
+#2 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Ssw))
+#3 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/siakad/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Applications/MAMP/htdocs/siakad/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(43): require_once('/Applications/M...')
+#6 {main}
