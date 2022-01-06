@@ -49,7 +49,7 @@
     </div>
     <div class="col-sm-12">
         <button class="btn btn-xs btn-flat btn-info" data-toggle="modal" data-target="#add"><i class="fa fa-plus"></i> Tambah Mata Pelajaran</button>
-        <button class="btn btn-xs btn-flat btn-primary"><i class="fa fa-print"></i> Cetak KRS</button>
+        <a href="<?= base_url('krs/print') ?>" target="_blank"class="btn btn-xs btn-flat btn-primary"><i class="fa fa-print"></i> Print KRS</a>
     </div>
     <div class="col-sm-12">
         <?php 
@@ -83,18 +83,16 @@
                     <td><?= $value['nama_guru'] ?></td>
                     <td class="text-center"><?= $value['hari'] ?>, <?= $value['waktu'] ?></td>
                     <td class="text-center">
-                        <a href="" class="btn btn-danger btn-flat btn-xs"><i class="fa fa-trash"></i></a>
+                        <button class="btn btn-danger btn-flat btn-xs" data-toggle="modal" data-target="#delete<?= $value['id_krs'] ?>"><i class="fa fa-trash"></i></button>
                     </td>
                 </tr>
             <?php } ?>
-            
         </table>
     </div>
 </div>
 
 
 <!-- Modal Add -->
-
 <div class="modal fade" id="add">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
@@ -122,21 +120,34 @@
                     </thead>
                     <tbody>
                         <?php $no = 1;
-                        foreach ($mapel as $key => $value) { ?>
+                        $db = \Config\Database::connect();
+                        foreach ($mapel as $key => $value) { 
+                            $jml = $db->table('tbl_krs')
+                            ->where('id_jadwal', $value['id_jadwal'])
+                            ->countAllResults();
+                        ?>
                             <tr>
                                 <td class="text-center"><?= $no++ ?></td>
                                 <td class="text-center"><?= $value['kode_mapel'] ?></td>
-                                <td class="text-center"><?= $value['mapel'] ?></td>
+                                <td class="text-center">
+                                    <?= $value['mapel'] ?>
+                                    (<?= $value['kode_jurusan']?>)
+                                </td>
                                 <td class="text-center"><?= $value['semester'] ?></td>
                                 <td class="text-center"><?= $value['fakultas'] ?></td>
                                 <td class="text-center"><?= $value['ruangan'] ?></td>
                                 <td class="text-center"><?= $value['nama_guru'] ?></td>
                                 <td class="text-center"><?= $value['hari'] ?>, <?= $value['waktu'] ?></td>
                                 <td class="text-center">
-                                    <span class="label label-primary">0/<?= $value['quota'] ?></span>
+                                    <span class="label label-primary"><?= $jml ?>/<?= $value['quota'] ?></span>
                                 </td>
                                 <td class="text-center">
-                                    <a href="<?= base_url('krs/tambah/'. $value['id_jadwal']) ?>" class="btn btn-success btn-flat btn-xs"><i class="fa fa-plus"></i></a>
+                                    <?php if ($jml == $value['quota']) { ?>
+                                        <span class="label label-danger">Full</span>
+                                    <?php } else { ?>
+                                        <a href="<?= base_url('krs/tambah/'. $value['id_jadwal']) ?>" class="btn btn-success btn-flat btn-xs"><i class="fa fa-plus"></i></a>
+                                    <?php } ?>
+                                    
                                 </td>
                             </tr>
                         <?php } ?>
@@ -148,3 +159,28 @@
     </div>
 <!-- /.modal-dialog -->
 </div>
+
+<!-- Modal Delete -->
+<?php foreach ($data_mapel as $key => $value) { ?>
+<div class="modal fade" id="delete<?= $value['id_krs'] ?>">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <h4 class="modal-title">Hapus <?= $title ?></h4>
+            </div>
+            <div class="modal-body">
+                Apakah anda yakin ingin menghapus <b><?= $value['kode_mapel'] ?> | <?= $value['mapel'] ?>?</b>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Tutup</button>
+                <a href="<?= base_url('krs/delete/'. $value['id_krs']) ?>" class="btn btn-primary btn-flat">Hapus</a>
+            </div>
+        </div>
+    <!-- /.modal-content -->
+    </div>
+<!-- /.modal-dialog -->
+</div>
+<?php } ?>

@@ -43,7 +43,8 @@
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
           <li><a href="<?= base_url('krs') ?>">Kartu Rencana Studi (KRS)</a></li>
-          <li><a href="<?= base_url('khs') ?>">Kartu Hasil Studi (KHS)</a></li>
+          <li><a href="<?= base_url('ssw/khs') ?>">Kartu Hasil Studi (KHS)</a></li>
+          <li><a href="<?= base_url('ssw/absensi') ?>">Absensi</a></li>
         </ul>
       </li>
 
@@ -51,10 +52,11 @@
       <!--Menu Halaman Guru-->
       <li><a href="<?= base_url('ggr') ?>">Dashboard </a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Menu <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Akademik <span class="caret"></span></a>
         <ul class="dropdown-menu" role="menu">
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
+          <li><a href="<?= base_url('ggr/jadwal') ?>">Jadwal Mengajar</a></li>
+          <li><a href="<?= base_url('ggr/absenkelas') ?>">Absen Kelas</a></li>
+          <li><a href="<?= base_url('ggr/nilaisiswa') ?>">Nilai Siswa</a></li>
         </ul>
       </li>
     <?php } ?>

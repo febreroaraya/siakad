@@ -15,7 +15,7 @@ class Mdl_jadwalpelajaran extends Model
             ->join('tbl_ruangan', 'tbl_ruangan.id_ruangan = tbl_jadwal.id_ruangan', 'left')
             ->join('tb_fakultas', 'tb_fakultas.id_fakultas = tbl_jadwal.id_fakultas', 'left')
             ->where('tbl_jadwal.id_jurusan', $id_jurusan)
-            ->orderBy('tb_mapel.semester', 'ASC')
+            ->orderBy('tbl_jadwal.id_jadwal', 'ASC')
             ->get()->getResultArray();
     }
 
